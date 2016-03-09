@@ -200,7 +200,7 @@ label{
   font-size: 1.5em;
 }
 
-input, textarea{
+input, textarea, button{
   display: block;
   border-bottom-style:solid;
   border-color: rgba(0,0,0,0.2);
@@ -225,7 +225,7 @@ textarea:focus{
   background: transparent;
 }
 
-input[type="submit"]{
+button[type="submit"]{
   width: 100%;
   background: rgba(94,217,235,0.3);
   text-transform: uppercase;
