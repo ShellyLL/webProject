@@ -1,0 +1,176 @@
+body {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.headline {
+	font-size: 2.5em;
+	border: double;
+}
+
+.category {
+	text-align: center;
+	clear: left;
+}
+
+.option {
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: 1.3em;
+	text-align: center;
+}
+
+.text {
+	font-size: 0.8em;
+	font-weight: bold;
+	color: purple;
+}
+
+.list {
+	list-style-type: none;
+}
+
+.icon {
+	width: 10%;
+	height: auto;
+}
+
+a.link {
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.nav {
+	position: static;
+}
+
+.nav-bottom {
+	list-style-type: none;
+	text-align: right;
+}
+
+.prev-next {
+	display: inline;
+}
+
+.prev-next-pic {
+	width: 6%;
+	height: auto;
+}
+
+.one-fourth {
+	width: 24.2%;
+	position: relative;
+	float: left;
+	border: outset;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.one-fifth {
+	width: 19.2%;
+	position: relative;
+	float: left;
+	border: outset;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.one-third {
+	width: 32.5%;
+	position: relative;
+	float: left;
+	border: outset;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.venue-pic {
+	width: 75%;
+	height: auto;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+	padding: 4px;
+}
+
+.venue-pic:hover {
+    box-shadow: 0 0 2px 1px purple;
+    transition: 0.3s;
+}
+
+.catering-pic {
+	width: 75%;
+	height: auto;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+	padding: 4px;
+}
+
+.catering-pic:hover {
+    box-shadow: 0 0 2px 1px purple;
+    transition: 0.3s;
+}
+
+.decoration-pic {
+	width: 75%;
+	height: auto;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+	padding: 4px;
+}
+
+.decoration-pic:hover {
+    box-shadow: 0 0 2px 1px purple;
+    transition: 0.3s;
+}
+
+.service-pic {
+	width: 80%;
+	height: auto;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+	padding: 4px;
+}
+
+.service-pic:hover {
+    box-shadow: 0 0 2px 1px purple;
+    transition: 0.3s;
+}
+
+.attire-pic {
+	width: 70%;
+	height: auto;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+	padding: 4px;
+}
+
+.attire-pic:hover {
+    box-shadow: 0 0 2px 1px purple;
+    transition: 0.3s;
+}
+
+#openings {
+	text-align: center;
+	clear: left;
+}
+
+li {
+	list-style: none;
+}
+
+#marketing {
+	text-align: center;
+}
+
+#sales {
+	text-align: center;
+}
+
+#technology {
+	text-align: center;
+}
+
+#finance {
+	text-align: center;
+}
+
