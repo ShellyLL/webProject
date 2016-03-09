@@ -151,16 +151,18 @@
 		</div>	
 	</div>
 	<!---common head end-->
+<div class="review">
+	<br>
+	<p>Review your order before ready to go</p>
+	<br>
+</div>
 <div class="bodyContainer">
 	<div class="singleStepContainer">
 		<img class="icon" src="Image/occassionIcon.png" alt="occassionIcon">
 		<p class="item">Your Occasion</p>
 		<p class="details"><?php print $occasion; ?></p>
 		<br><br><br><br><br><br>
-		<div class="edit">
-			<img class="editIcon" src="Image/editIcon.png" alt="editIcon">
-			<p class="editText">Edit</p>
-		</div>
+		
 	</div>
 
 	<div class="singleStepContainer">
@@ -169,10 +171,7 @@
 		<p class="details">guest#: <?php print $guestnumber; ?></p>
 		<p class="details">location: <?php print $location; ?></p>
 		<br><br><br><br><br><br>
-		<div class="edit">
-			<img class="editIcon" src="Image/editIcon.png" alt="editIcon">
-			<p class="editText">Edit</p>
-		</div>
+		
 	</div>
 
 	<div class="singleStepContainer">
@@ -180,12 +179,9 @@
 		<p class="item">Venue</p>
 		<p class="details"><?php print $venue; ?></p>
 		<p class="details">$<?php print $venuePrice; ?></p>
-		<p>$$$</p>
+		
 		<br><br><br><br><br><br>
-		<div class="edit">
-			<img class="editIcon" src="Image/editIcon.png" alt="editIcon">
-			<p class="editText">Edit</p>
-		</div>
+		
 	</div>
 
 	<div class="singleStepContainer">
@@ -193,24 +189,18 @@
 		<p class="item">Catering</p>
 		<p class="details"><?php print $catering; ?></p>
 		<p class="details">$<?php print $cateringPrice; ?></p>
-		<p>$$$</p>
+		
 		<br><br><br><br><br><br>
-		<div class="edit">
-			<img class="editIcon" src="Image/editIcon.png" alt="editIcon">
-			<p class="editText">Edit</p>
-		</div>
+		
 	</div>
 	<div class="singleStepContainer">
 		<img class="icon" src="Image/decorationIcon.png" alt="decoarationIcon">
 		<p class="item">Decoration</p>
 		<p class="details"><?php print $decoration; ?></p>
 		<p class="details">$<?php print $decorationPrice; ?></p>
-		<p>$$$</p>
+		
 		<br><br><br><br><br><br>
-		<div class="edit">
-			<img class="editIcon" src="Image/editIcon.png" alt="editIcon">
-			<p class="editText">Edit</p>
-		</div>
+		
 	</div>
 
 	<div class="singleStepContainer">
@@ -218,12 +208,9 @@
 		<p class="item">Service</p>
 		<p class="details"><?php print $service; ?></p>
 		<p class="details">$<?php print $servicePrice; ?></p>
-		<p>$$$</p>
+		
 		<br><br><br><br><br><br>
-		<div class="edit">
-			<img class="editIcon" src="Image/editIcon.png" alt="editIcon">
-			<p class="editText">Edit</p>
-		</div>
+		
 	</div>
 
 	<div class="singleStepContainer">
@@ -231,12 +218,9 @@
 		<p class="item">Attire</p>
 		<p class="details"><?php print $attire; ?></p>
 		<p class="details">$<?php print $attirePrice; ?></p>
-		<p>$$$</p>
+		
 		<br><br><br><br><br><br>
-		<div class="edit">
-			<img class="editIcon" src="Image/editIcon.png" alt="editIcon">
-			<p class="editText">Edit</p>
-		</div>
+		
 	</div>
 </div>
 
