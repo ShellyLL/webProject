@@ -105,17 +105,17 @@
 	<div class="package">
 		<img class="listicon" src="Image/threediamond.png" alt="threediamond">
 		<br><br>
-		<a href="Page7EventDetails.html">Luxury Package</a>	
+		<a href="luxurypackage.php">Luxury Package</a>	
 	</div>
 	<div class="package">
 		<img class="listicon" src="Image/twodiamond.png" alt="twodiamond">
 		<br><br>
-		<a href="Page7EventDetails.html">Popular Package</a>		
+		<a href="popularpackage.php">Popular Package</a>		
 	</div>
 	<div class="package">
 		<img class="listicon" src="Image/onediamond.png" alt="onediamond">
 		<br><br>
-		<a href="Page7EventDetails.html">Classic Package</a>
+		<a href="classicpackage.php">Classic Package</a>
 	</div>
 </div>
 <?php
