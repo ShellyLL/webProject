@@ -5,14 +5,12 @@
     <!--- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>PartyJoy | Payment</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PartyJoy | Confirmation</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!---css & js-->
     <link rel="stylesheet" type="text/css" href="Css/Page1HomePageStyle.css">
     <link rel="stylesheet" type="text/css" href="Css/commonStyle.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
-    <script src="jquery.payment.js"></script>
 	<script src="Js/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="Js/pptBox.js"></script>
     
@@ -24,29 +22,7 @@
 	<link rel="shortcut icon" href="Image/logoOnly.png" >
     <link rel="icon" href="Image/logoOnly.png">
 
-      <script>
-    jQuery(function($) {
-      $('[data-numeric]').payment('restrictNumeric');
-      $('.cc-number').payment('formatCardNumber');
-      $('.cc-exp').payment('formatCardExpiry');
-      $('.cc-cvc').payment('formatCardCVC');
-      $.fn.toggleInputError = function(erred) {
-        this.parent('.form-group').toggleClass('has-error', erred);
-        return this;
-      };
-      $('form').submit(function(e) {
-        e.preventDefault();
-        var cardType = $.payment.cardType($('.cc-number').val());
-        $('.cc-number').toggleInputError(!$.payment.validateCardNumber($('.cc-number').val()));
-        $('.cc-exp').toggleInputError(!$.payment.validateCardExpiry($('.cc-exp').payment('cardExpiryVal')));
-        $('.cc-cvc').toggleInputError(!$.payment.validateCardCVC($('.cc-cvc').val(), cardType));
-        $('.cc-brand').text(cardType);
-        $('.validation').removeClass('text-danger text-success');
-        $('.validation').addClass($('.has-error').length ? 'text-danger' : 'text-success');
-      });
-    });
-  </script>
-    
+
 </head>
 
 <body>
@@ -55,12 +31,6 @@
 	<div class="header">
 		<div class="logo">
 			<img id="logoImage" src="Image/headerLogoImage.png" alt="logo" />
-		</div>
-		<div class="signInUp">
-			<ul class="signInUpList">
-				<li id="logIn"><a title="Login to PartyJoy" href="Page5SignInXiaoyu.html">Log In</a></li>
-				<li id="signUp"><a title="Signup to PartyJoy" href="Page4SignUpXiaoyu.html">Sign Up</a></li>	
-			</ul>
 		</div>
 	</div>
 	
@@ -136,41 +106,29 @@
 		<div class="dropdown" id="more">
 		  <a class="nodropdown" href="contactUS.html">More</a>
 		</div>	
+	</div
+
+	<div class="row item">
+		<br><br><br><br><br><br><br>
 	</div>
-	<!---common head end-->
 
-<div class="row item">
-   
-	<div id="containerPayment">
-  		<form method="post" action="http://localhost:8888/payment.php">
+	<div class="row item" id="confirmation">
+    	<div id="confirmationFirst">
+    		<h2>Dear <?php
+				$name = @trim($_POST["name"]);
+				print ("$name");?>:
+			</h2>
+			<h3> Thank You for Your Message. Our Team will Response within 24 Hours.
+				 Thanks again for visiting PartyJoy! </h3>
+				 <br>
+        </div>
+    </div>
 
-	    <p>
-      <label>Card Number</label>
-      <input name="cardNumber" type="text" placeholder="1234 5678 9012 3456"/>
-    </p>
-        <p>
-      <label>Expiration Date</label>
-      <input name="cardDate" type="text" placeholder="03/2016"/>
-    </p>
-        <p>
-      <label>Security Code</label>
-      <input name="securityCode" type="text" placeholder="123"/>
-    </p>
-    <p>
-      <label>Billing Zip Code</label>
-      <input name="zipCode" type="text" placeholder="95053"/>
-    </p>
-  <button type="submit" value="Submit Payment" />Submit</button>
-  <h2 class="validation"></h2>
+    <div class="row item">
+		<br><br><br><br>
+	</div>
 
-  </form>
-</div>
-</div>
-<div class="row item" id="seeConfirm">
-	<p><a href="page18ConfirmationHL.html">You Will Receive Your Order Confirmation Soon</a></p>
-</div>
-
-<!---footer-->
+    <!---footer-->
 	<div class="footer"> 
 			<div class="social">
 				<p>Connect with Us: </p>
@@ -187,10 +145,7 @@
 			</div>
 	        <div class="copyright">© Made by PartyJoy All rights reserved. Photo source: Google Photo</div>       
 	</div> 
-<!---footer end-->
-
-<!-- Script
-================================================== -->
-
+<!---footer end-->   
+    
 </body>
 </html>

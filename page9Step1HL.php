@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
 
+<?php
+    if (isset($_GET['item'])) {
+    	$xml = simplexml_load_file("db.xml"); 
+    	$xml->occasion = $_GET['item'];
+    	$xml->asXML("db.xml");
+    }
+?>
+
 <head>
     <!--- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>PartyJoy | Payment</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PartyJoy | Step 1</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!---css & js-->
     <link rel="stylesheet" type="text/css" href="Css/Page1HomePageStyle.css">
     <link rel="stylesheet" type="text/css" href="Css/commonStyle.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
-    <script src="jquery.payment.js"></script>
 	<script src="Js/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="Js/pptBox.js"></script>
     
@@ -20,33 +27,12 @@
     ================================================== -->
     <link rel="stylesheet" href="page2ExamplesHL.css">
     
-<!---favicon-->
+	<!---favicon-->
 	<link rel="shortcut icon" href="Image/logoOnly.png" >
     <link rel="icon" href="Image/logoOnly.png">
 
-      <script>
-    jQuery(function($) {
-      $('[data-numeric]').payment('restrictNumeric');
-      $('.cc-number').payment('formatCardNumber');
-      $('.cc-exp').payment('formatCardExpiry');
-      $('.cc-cvc').payment('formatCardCVC');
-      $.fn.toggleInputError = function(erred) {
-        this.parent('.form-group').toggleClass('has-error', erred);
-        return this;
-      };
-      $('form').submit(function(e) {
-        e.preventDefault();
-        var cardType = $.payment.cardType($('.cc-number').val());
-        $('.cc-number').toggleInputError(!$.payment.validateCardNumber($('.cc-number').val()));
-        $('.cc-exp').toggleInputError(!$.payment.validateCardExpiry($('.cc-exp').payment('cardExpiryVal')));
-        $('.cc-cvc').toggleInputError(!$.payment.validateCardCVC($('.cc-cvc').val(), cardType));
-        $('.cc-brand').text(cardType);
-        $('.validation').removeClass('text-danger text-success');
-        $('.validation').addClass($('.has-error').length ? 'text-danger' : 'text-success');
-      });
-    });
-  </script>
-    
+
+
 </head>
 
 <body>
@@ -71,8 +57,8 @@
 		<div class="dropdown">
 		  <button class="dropbtn">Occasion</button>
 		  <div class="dropdown-content">
-		    <a href="page9Step1HL.html">Wedding</a>
-		    <a href="page9Step1HL.html">Birthday Party</a>
+		    <a href="page9Step1HL.php?item=wedding">Wedding</a>
+		    <a href="page9Step1HL.php?item=birthday">Birthday Party</a>
 		    <a href="page9Step1HL.html">House Warming</a>
 		    <a href="page9Step1HL.html">Baby Shower</a>
 		  </div>
@@ -138,39 +124,72 @@
 		</div>	
 	</div>
 	<!---common head end-->
-
-<div class="row item">
-   
-	<div id="containerPayment">
-  		<form method="post" action="http://localhost:8888/payment.php">
-
-	    <p>
-      <label>Card Number</label>
-      <input name="cardNumber" type="text" placeholder="1234 5678 9012 3456"/>
-    </p>
-        <p>
-      <label>Expiration Date</label>
-      <input name="cardDate" type="text" placeholder="03/2016"/>
-    </p>
-        <p>
-      <label>Security Code</label>
-      <input name="securityCode" type="text" placeholder="123"/>
-    </p>
-    <p>
-      <label>Billing Zip Code</label>
-      <input name="zipCode" type="text" placeholder="95053"/>
-    </p>
-  <button type="submit" value="Submit Payment" />Submit</button>
-  <h2 class="validation"></h2>
-
-  </form>
-</div>
-</div>
-<div class="row item" id="seeConfirm">
-	<p><a href="page18ConfirmationHL.html">You Will Receive Your Order Confirmation Soon</a></p>
-</div>
-
-<!---footer-->
+    <br>
+	<div class="row item">
+    	<div class="seven columns">
+        	<div class="container">
+    			<button class="button" onclick="location.href='/webProject/page9Step1HL.php?item=Wedding';"><img class="howToImage" src="Image/step1Images/wedding.jpg" alt="wedding"></button>
+        	<div class="howToCaption"><h4>Wedding</h4></div>
+         </div>
+   		</div> <!-- end of seven colums-->
+        
+        <div class="firstAndThrid">
+        	<div class="container">
+    			<button class="button" onclick="location.href='/webProject/page9Step1HL.php?item=Birthday';"><img class="howToImage" src="Image/step1Images/birthday.jpg" alt="birthday"></button>
+        	<div class="howToCaption"><h4>Birthday</h4></div>
+         </div>
+   		</div> <!-- end of eight colums-->
+	</div>
+    
+    <div class="row item">
+    	<div class="four columns">
+        	<div class="container">
+    			<button class="button" onclick="location.href='/webProject/page9Step1HL.php?item=House-Warming';"><img class="howToImage" src="Image/step1Images/houseWarming.jpg" alt="houseWarming" name="houseWarming"></button>
+        	<div class="howToCaption"><h4>House Warming</h4></div>
+         </div>
+   		</div> <!-- end of eight colums-->
+        
+        <div class="four columns">
+        	<div class="container">
+    			<img class="howToImage" src="Image/step1Images/person.jpg" alt="personChoose">
+        	<div class="personCaption"><h4>Choose Your Occation</h4></div>
+         </div>
+   		</div> <!-- end of eight colums-->
+        
+        <div class="firstAndThrid">
+        	<div class="container">
+    			<button class="button" onclick="location.href='/webProject/page9Step1HL.php?item=Baby-Shower';"><img class="howToImage" src="Image/step1Images/babyShower.jpg" alt="babyShower"></button>
+        	<div class="howToCaption"><h4>Baby Shower</h4></div>
+         </div>
+   		</div> <!-- end of eight colums-->
+	</div>
+    
+        <div class="row item">
+    	<div class="seven columns">
+        	<div class="container">
+    			<button class="button" onclick="location.href='/webProject/page9Step1HL.php?item=Holiday-Celebration';"><img class="howToImage" src="Image/step1Images/holiday.jpg" alt="holiday"></button>
+        	<div class="howToCaption"><h4>Holiday Celebration</h4></div>
+         </div>
+   		</div> <!-- end of seven colums-->
+        
+        <div class="firstAndThrid">
+        	<div class="container">
+    			<button class="button" onclick="location.href='/webProject/page9Step1HL.php?item=Corporation-Event';"><img class="howToImage" src="Image/step1Images/corporation.jpg" alt="Corporation Event"></button>
+        	<div class="howToCaption"><h4>Corporation Event</h4></div>
+         </div>
+   		</div> <!-- end of firstAndThrid-->
+	</div>
+    
+    
+    <div >
+		<ul class="nav-bottom">
+			<li class="prev-next"><li class="prev-next"><a class="prev-next-link" href="page10Step2.php">
+					<img class="prev-next-pic" src="Image/next.png" alt="prev"></a></li>
+		</ul>
+	</div>
+    
+    
+    <!---footer-->
 	<div class="footer"> 
 			<div class="social">
 				<p>Connect with Us: </p>
@@ -189,8 +208,5 @@
 	</div> 
 <!---footer end-->
 
-<!-- Script
-================================================== -->
-
-</body>
+</body>  
 </html>

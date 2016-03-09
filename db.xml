@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<party>
+	<occasion>Baby-Shower</occasion>
+	
+	<guestnumber>20</guestnumber>
+	<date>2016-03-08</date>
+	<time>14:02</time>
+	<location>chicago</location>
+	<inout>Outdoor</inout>
+	<comment>111</comment>
+
+	<venue>Half-Moon-Bay</venue>
+	<catering>Tiramisu</catering>
+	<decoration>Colorful-Ballon</decoration>
+	<service>Photography</service>
+	<attire>Giorgio-Armani</attire>
+
+	<venues>
+		<Ritz-Carlton>
+			<price>1200</price>
+		</Ritz-Carlton>
+		<Sheraton>
+			<price>800</price>
+		</Sheraton>
+		<DoubleTree>
+			<price>500</price>
+		</DoubleTree>
+
+		<Duke-Chapel>
+			<price>2000</price>
+		</Duke-Chapel>
+		<Stanford-Memorial-Church>
+			<price>1500</price>
+		</Stanford-Memorial-Church>
+		<Mission-Santa-Clara>
+			<price>1000</price>
+		</Mission-Santa-Clara>
+
+		<Half-Moon-Bay>
+			<price>2000</price>
+		</Half-Moon-Bay>
+		<Golden-Gate-Park>
+			<price>1200</price>
+		</Golden-Gate-Park>
+		<Shoreline-Park>
+			<price>800</price>
+		</Shoreline-Park>
+	
+		<Coyote-Creek-Center>
+			<price>500</price>
+		</Coyote-Creek-Center>
+		<Ewoodys-Community-Center>
+			<price>300</price>
+		</Ewoodys-Community-Center>
+		<North-Par-Community-Center>
+			<price>200</price>
+		</North-Par-Community-Center>
+	</venues>
+
+	<caterings>
+		<Beef>
+			<price>200</price>
+		</Beef>
+		<Fish>
+			<price>300</price>
+		</Fish>
+		<Scallop>
+			<price>300</price>
+		</Scallop>
+		<Vegan>
+			<price>150</price>
+		</Vegan>
+
+		<Red-Wine>
+			<price>200</price>
+		</Red-Wine>
+		<White-Wine>
+			<price>200</price>
+		</White-Wine>
+		<Beer>
+			<price>100</price>
+		</Beer>
+		<Coke>
+			<price>70</price>
+		</Coke>
+
+		<Tiramisu>
+			<price>100</price>
+		</Tiramisu>
+		<Cheesecake>
+			<price>100</price>
+		</Cheesecake>
+		<Cupcake>
+			<price>100</price>
+		</Cupcake>
+		<Ice-Cream>
+			<price>70</price>
+		</Ice-Cream>
+		
+		<Chips>
+			<price>50</price>
+		</Chips>
+		<French-Fries>
+			<price>50</price>
+		</French-Fries>
+		<Pretzel>
+			<price>50</price>
+		</Pretzel>
+		<Fruit>
+			<price>100</price>
+		</Fruit>
+	</caterings>
+
+	<decorations>
+		<Knife-Server-Set>
+			<price>50</price>
+		</Knife-Server-Set>
+		<Personalized-Napkins>
+			<price>50</price>
+		</Personalized-Napkins>
+		<Mason-Jars>
+			<price>50</price>
+		</Mason-Jars>
+
+		<Rose>
+			<price>100</price>
+		</Rose>
+		<Lily>
+			<price>100</price>
+		</Lily>
+		<Sunflower>
+			<price>100</price>
+		</Sunflower>
+	
+		<Colorful-Ballon>
+			<price>60</price>
+		</Colorful-Ballon>
+		<Heart-Ballon>
+			<price>60</price>
+		</Heart-Ballon>
+		<Happy-Birthday-Ballon>
+			<price>60</price>
+		</Happy-Birthday-Ballon>
+
+		<Gift-Tags>
+			<price>40</price>
+		</Gift-Tags>
+		<Banner>
+			<price>40</price>
+		</Banner>
+		<Thank-You-Card>
+			<price>40</price>
+		</Thank-You-Card>
+
+		<Home-Lighting>
+			<price>100</price>
+		</Home-Lighting>
+		<Christmas-Lighting>
+			<price>100</price>
+		</Christmas-Lighting>
+		<Outdoor-Lighting>
+			<price>100</price>
+		</Outdoor-Lighting>
+	</decorations>
+
+	<services>
+		<Emcee>
+			<price>500</price>
+		</Emcee>
+		<DJ>
+			<price>400</price>
+		</DJ>
+
+		<Photography>
+			<price>700</price>
+		</Photography>
+		<Videography>
+			<price>700</price>
+		</Videography>
+	
+		<Clean-Up>
+			<price>400</price>
+		</Clean-Up>
+		<Table-Waiter>
+			<price>400</price>
+		</Table-Waiter>
+	</services>
+
+	<attires>
+		<Pronovias>
+			<price>2000</price>
+		</Pronovias>
+		<Vera-Wang>
+			<price>3000</price>
+		</Vera-Wang>
+
+		<Giorgio-Armani>
+			<price>2000</price>
+		</Giorgio-Armani>
+		<Hugo-Boss>
+			<price>1000</price>
+		</Hugo-Boss>
+	
+		<Long-Hair>
+			<price>500</price>
+		</Long-Hair>
+		<Short-Hair>
+			<price>500</price>
+		</Short-Hair>
+
+		<Western-Style>
+			<price>500</price>
+		</Western-Style>
+		<Korean-Style>
+			<price>500</price>
+		</Korean-Style>
+	</attires>
+
+</party>
