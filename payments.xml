@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<payments>
+<payment>
+    <cardNumber>4321 6543 8765 9862</cardNumber>
+    <cardDate>04/2018</cardDate>
+    <securityCode>578</securityCode>
+    <zipCode>94089</zipCode>   
+</payment>
+<payment>
+    <cardNumber>9082 0394 2735 0908</cardNumber>
+    <cardDate>09/2019</cardDate>
+    <securityCode>902</securityCode>
+    <zipCode>94087</zipCode>   
+</payment>
+</payments>

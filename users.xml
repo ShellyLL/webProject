@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<users>
+<user>
+    <id>0</id>
+    <fname>Hanzi</fname>
+    <lname>Li</lname>
+    <email>hli@scu.edu</email>
+    <password>hli</password>
+    
+</user>
+<user>
+    <id>1</id>
+    <fname>Arthur</fname>
+    <lname>Black</lname>
+    <email>ablack@gmail.com</email>
+    <password>ablack</password>
+    
+</user>
+<user>
+    <id>2</id>
+    <fname>Brian</fname>
+    <lname>Luo</lname>
+    <email>bluo@gmail.com</email>
+    <password>bluo</password>
+    
+</user>
+</users>
