@@ -1,0 +1,23 @@
+.aboutus {
+	width: 100%;
+	height: auto;
+	float: left;
+	padding: 30px 100px;
+}
+
+h1 {
+	font-family: verdana;
+	color: grey;
+}
+h2 {
+	font-family: verdana;
+	color: grey;
+}
+
+p {
+	font-family: verdana;
+	color: grey;
+	font-size: 20px;
+	padding: 10px;
+}
+

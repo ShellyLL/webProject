@@ -1,0 +1,111 @@
+
+.homeExample{
+	width: 100%;
+	height: 80%;
+	background-color:lightgrey;
+}
+
+/*---how to---*/
+.howTo {
+  float: left;
+	width: 100%;
+	height: 50%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.howtocontainer {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  left: 10%;
+  background: linear-gradient(white, #e6f3ff); 
+}
+
+#howtoimage {
+  height: 100%;
+  width: auto;
+  float: right;
+}
+
+.howtocontainer p {
+  font-family: verdana;
+  color: grey;
+  font-size: 25px;
+  position: relative;
+  top: 15%;
+}
+
+.howTo a{
+  font-family: verdana;
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+  background-color: #80bfff;
+  text-decoration: none;
+  position: absolute;
+  right: 55%;
+  bottom: 20%;
+  
+}
+.howTo a:hover{
+  background-color: grey;
+}
+span {
+  font-size: 32px;
+  color: #b3b3ff;
+}
+
+/*---get started---*/
+.getStarted {
+  float: left;
+	width: 100%;
+	height: 15%;
+	text-align: center;
+  margin-top: 10px;
+}
+.getstartcontainer {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  left: 10%;
+  background: linear-gradient(white, #e6f3ff); 
+}
+.getStarted a {
+  font-family:Verdana;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  background-color: #80bfff;
+  padding: 10px 20px;
+}
+.getStarted a:hover{
+  background-color: grey;
+}
+
+.focus{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 200px;
+  text-align: center;
+}
+.slideimage{
+  width: 100%;
+  text-align: center;
+  display: block;
+  float: left;
+}
+
+.mainbox{overflow:hidden; position:relative; left: 13%;}
+.flashbox{overflow:hidden;position:relative;}
+.imagebox{text-align:right;position:relative;z-index:999;}
+.bitdiv{display:inline-block;width:18px;height:18px;margin:0 10px 10px 0px;cursor:pointer;float:right;}
+.defimg{background-image:url(../Image/02.png)}
+.curimg{background-image:url(../Image/01.png)}
+
+
+
+
+
+

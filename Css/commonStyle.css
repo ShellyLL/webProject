@@ -1,0 +1,186 @@
+/*---header---*/
+.header {
+  width: 100%;
+}
+#logoImage {
+	height: 100%;
+	width: auto;
+	position: relative;
+  left: 20%;
+  display: block;
+}
+.logo {
+	width: 60%;
+	height: 10%;
+	float: left;
+  background-color: white;
+}
+.signInUp {
+	width: 40%;
+	height: 10%;
+	float:left; 
+  margin: 0; 
+  background-color: white;
+}
+.signInUpList {
+	list-style-type: none;
+  overflow: hidden;
+  position: relative;
+  left: 35%;
+}
+.signInUpList li{
+	float:left;
+	border: orange solid 3px;  
+	border-radius: 8px; 
+  margin-left:10px;
+  margin-top:20px;
+  bottom:20px;
+}
+#logIn a{
+	padding: 14px 14px;
+	text-decoration: none;
+	font-family:Verdana;
+  font-size: 20px;
+}
+#signUp a{
+	padding: 14px 14px;
+	text-decoration: none;
+	font-family:Verdana;
+  font-size: 20px;
+}
+/*---header end---*/
+
+/*---nav---*/
+.navbar{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  float: left;
+  background-color: #b3b3ff;
+  padding: 0;
+}
+.nodropdown {
+  text-decoration: none;;
+  font-family: verdana;
+  color: white;
+  height: 100%;
+}
+
+#home {
+  height: 100%;
+  padding: 16px;
+}
+#home:hover {
+  background-color: lightgrey;
+}
+
+#more {
+  height: 100%;
+  padding: 16px;
+}
+#more:hover {
+  background-color: lightgrey;
+}
+.dropbtn {
+    background-color: #b3b3ff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    min-width: 120px;
+}
+.dropbtn a{
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-family: verdana;
+    z-index: 999;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: lightgrey;
+}
+
+/*---nav end---*/
+
+/*---footer---*/
+.footer {
+  float: left;
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.social {
+  text-align: center;
+  display: inline-block;
+  margin-top: 5px; 
+}
+
+.social p {
+  font-family: verdana;
+  color: lightgrey;
+  float: left;
+  font-size: 20px;
+}
+
+.social a {
+  text-decoration: none;
+  margin-left: 60px;
+}
+
+.social a img {
+  margin-top: 15px;
+}
+.footnavbar {
+  margin-top: 5px;
+}
+.foot {
+  width: 20%;
+  float: left;
+  color: grey;
+  text-align: center;
+  font-family:Verdana;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 50px;
+}
+.copyright{
+  width: 100%;
+  text-align: center;
+  float: left;
+  margin-top: 25px;
+}
+/*---foot end---*/
+
