@@ -1,0 +1,308 @@
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.sign-head{
+  width: 60%;
+  margin: 0 auto;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+
+.sign-up-input .sign-in-input{
+  width: 50%;
+  height: 50px;
+  margin-bottom: 25px;
+  margin-top:10em;
+  padding: 0 15px 2px;
+  font-size: 15px;
+  background: white;
+  border: 3px solid #ebebeb;
+  border-color: #000000;
+  border-radius: 10px;
+}
+
+.sign-up-input .sign-in-input:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.container {
+     width: 60%;
+     margin: auto;
+     clear: both;
+     border: 1px solid black;
+     background-color:#d6ebf2;
+     border-radius: 10px;
+     padding-top: 50px;
+     padding-right: 30px;
+     padding-bottom: 50px;
+     padding-left: 30px;
+
+ }
+ .container input {
+     width: 100%;
+     height: 40px;
+     clear: both;
+ }
+
+
+ .SignUpWrapper{
+     float:left;
+     width: 100%;
+     height: auto;
+     border-radius: 10px;
+     margin: auto;
+     padding-right: 30px;
+     padding-bottom: 50px;
+     padding-left: 30px;
+ }
+
+ .SignIn {
+     float: left;
+     border-radius: 10px;
+     width:100%;
+     margin: auto;
+     padding-top: 50px;
+     padding-right: 30px;
+     padding-bottom: 50px;
+     padding-left: 30px;
+ }
+
+
+ #submitButton1{
+   width: 30%;
+   height: 25px;
+   float: right;
+   font-size: 18px;
+   border-color: #67818a;
+   margin-top: 5px;
+   padding-bottom: 10px;
+   background-color: #1aa3ff;
+   text-align: center;
+   text-decoration: none;
+   border-radius: 10px;
+ }
+
+ #submitButton1:hover{
+  background-color: #8080ff;
+ }
+
+ .container label{
+   font-size: 18px;
+ }
+
+
+ /*style for sign in page--page 5*/
+ .inviteSignUp a{
+   text-decoration: none;
+   font-weight: bold;
+   color: #4d4dff;
+ }
+  .inviteSignUp a:hover{
+   color: #cc66ff;
+  }
+
+
+ .dashBoardWrapper{
+   border: 1px solid white;
+   float: left;
+   width: 100%;
+   margin: auto;
+   background-color:white;
+   padding-top: 50px;
+   padding-right: 30px;
+   padding-bottom: 50px;
+   padding-left: 30px;
+ }
+
+ #dashBoardContent{
+   border: 1px solid black;
+   width:40%;
+   margin: auto;
+   background-color:#d6ebf2;  /* background color for the form*/
+   border-radius: 10px;
+   padding-top: 15px;
+   padding-right: 30px;
+   padding-bottom: 50px;
+   padding-left: 20%;
+ }
+
+  #dashBoardContent a{
+    text-decoration: none;
+    color: black;
+  }
+
+  #comingParty a{
+    color: blue;
+  }
+  #bookMarked a{
+    color: blue;
+  }
+
+  #dashBoardContent a:hover{
+    color:  #ed00ff;
+  }
+
+ .myAccountTitle{
+    width:80%;
+    margin: auto;
+    padding-top:30px;
+    padding-bottom: 30px;
+    text-align: center;
+ }
+
+.myAccountTitle{
+  color:  #9966ff;
+  font-size: 25px;
+
+}
+.partyTag{
+  color:  #ac7339;
+  font-size: 20px;
+}
+ .dashBoard{
+   color:  #ac7339;
+   font-size: 25px;
+ }
+ #dashBoardContent li{
+   list-style-type: none;
+ }
+
+ /*
+  * style for the page 8 bookmarked item page
+  */
+
+ .row {
+    border: 1px solid black;
+ }
+ .row img{
+   width: 80px;
+   height: auto;
+ }
+
+#shoppingCart{
+  width: auto;
+  height: 80px;
+}
+.transition{
+  float: left;
+  width: 100%;
+}
+
+.outContainer{
+  float: left;
+  width: 100%;
+}
+#borderRow{
+  border:1px solid black;
+}
+
+.outContainer a{
+  text-decoration: none;
+}
+.outContainer a:hover{
+  color: #c34ff2;
+}
+
+
+
+/* style for the help page */
+.helpContainer{
+  float: left;
+  width: 100%;
+  padding-left: 20%;
+  padding-top: 30px;
+}
+
+.helpContainer a{
+  text-decoration: none;
+  color: #ac7339;
+}
+
+
+.helpContainer a:hover{
+  color: #c34ff2;
+}
+
+#question{
+  color: #0044cc;
+}
+#answer{
+  color:  black;
+}
+
+#contactInfo {
+  color: #0044cc;
+  font-weight: bold;
+}
+#customerList{
+  list-style-type: none;
+}
+
+ /* default ------------------------------------------------------------- */
+ .row {
+    width: 96%;
+    padding-top: 50px;
+    max-width: 100%;
+    margin: 0 auto;
+ }
+
+ /* fixed width for IE8 */
+ .ie .row { width: 1000px ; }
+
+ .narrow .row { max-width: 980px; }
+
+ .row .row {
+    width: auto;
+    max-width: none;
+    margin: 0 -20px 20px;
+ }
+
+ /* row clearing */
+ .row:before,
+ .row:after {
+     content: " ";
+     display: table;
+ }
+ .row:after {
+     clear: both;
+ }
+
+ .column, .columns {
+    position: relative;
+    padding: 0 0px;
+    min-height: 1px;
+    float: left;
+ }
+ .column.centered, .columns.centered  {
+     float: none;
+     margin: 0 auto;
+ }
+
+ /* removed gutters */
+ .row.collapsed > .column,
+ .row.collapsed > .columns,
+ .column.collapsed, .columns.collapsed  { padding: 0; }
+
+ [class*="column"] + [class*="column"]:last-child { float: right; }
+ [class*="column"] + [class*="column"].end { float: right; }
+
+ /* column widths */
+ .row .half        { width: 4.16667%; }
+ .row .one         { width: 8.33333%; }
+ .row .two         { width: 16.66667%; }
+ .row .three       { width: 25%; }
+ .row .four        { width: 33.33333%; }
+ .row .five        { width: 41.66667%; }
+ .row .six         { width: 50%; }
+ .row .seven       { width: 58.33333%; }
+ .row .eight       { width: 66.66667%; }
+ .row .nine        { width: 75%; }
+ .row .ten         { width: 83.33333%; }
+ .row .eleven      { width: 91.66667%; }
+ .row .twelve      { width: 100%; }
