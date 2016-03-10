@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <payment>
-	<cardNumber>1234</cardNumber>
-	<cardDate>123</cardDate>
-	<securityCode>846</securityCode>
-	<zipCode>95035</zipCode>
+	<cardNumber>1232423</cardNumber>
+	<cardDate>3434</cardDate>
+	<securityCode>5570</securityCode>
+	<zipCode>95132</zipCode>
 </payment>
