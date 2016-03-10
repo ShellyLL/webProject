@@ -231,7 +231,7 @@
 					<img class="venue-pic" src="Image/north-park.png" alt="north park"></a>
 				<br><br>
 				<img class="fav icon" src="Image/fav.png" alt="fav">
-				<button onclick="location.href='/webProject/page11Step3.php?item=North-Par-Community-Center';">Add to Cart!</button>
+				<button onclick="location.href='/webProject/page11Step3.php?item=North-Park-Community-Center';">Add to Cart!</button>
 			</li>
 		</ul>
 	</div>
