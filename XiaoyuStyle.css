@@ -143,6 +143,9 @@ body {
   #bookMarked a{
     color: blue;
   }
+  #recommendedParty a{
+    color: blue;
+  }
 
   #dashBoardContent a:hover{
     color:  #ed00ff;

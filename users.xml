@@ -24,4 +24,4 @@
     <password>bluo</password>
 
 </user>
-<user><id>3</id><fname>Emily</fname><lname>Lemay</lname><email>papillonnette@qq.com</email><password>12345</password></user></users>
+<user><id>3</id><fname>Emily</fname><lname>Lemay</lname><email>papillonnette@qq.com</email><password>12345</password></user><user><id>4</id><fname>Xiaoyu</fname><lname>Li</lname><email>whulucy@gmail.com</email><password>123</password></user><user><id>5</id><fname>Natalie</fname><lname>lee</lname><email>natalie@gmail.com</email><password>12345</password></user></users>

@@ -118,8 +118,8 @@
               <li><a href = "page9Step1HL.php">New Party </a></li>
             </ul>
 
-            <h4 class="PartyTag">History Party:</h4>
-            <ul id = "historyParty">
+            <h4 class="PartyTag">Recommended Party Package:</h4>
+            <ul id = "recommendedParty">
 							  <li><a href = "classicpackage.php">Classic Package </a></li>
 								<li><a href = "popularpackage.php">Popular Package</a></li>
 								<li><a href = "luxurypackage.php">Luxury Package</a></li>
@@ -128,9 +128,9 @@
 
             <h4 class="PartyTag">Setting:</h4>
             <ul id = "setting">
-							<li>first name: <?=$user->fname?></li>
-							<li>last name: <?=$user->lname?></li>
-              <li>email: <?=$user->email?></li>
+							<li><strong>First name: </strong><span style="color:red" "font-size: 20px;"><?=$user->fname?></span></li>
+							<li><strong>Last name: </strong><span style="color:red" "font-size: 40px;"><?=$user->lname?></span></li>
+              <li><strong>Email:</strong><span style="color:red" "font-size: 30px;"><?=$user->email?></span></li>
             </ul>
         </div>
       </div>
