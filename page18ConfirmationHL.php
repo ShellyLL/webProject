@@ -185,11 +185,28 @@
             </div>
             
             <div class="four column" id = "confirmationImage">
-            <a href="http://www.davidsbridal.com/" target="_blank"><img class="sponsorImage" src="Image/sponsorImage2.jpg" alt="sponsor"/></a> 
+            	<div id="focus" >
+			 <script>
+			 var box =new PPTBox();
+			 box.width = 300; //宽度
+			 box.height = 200;//高度
+			 box.autoplayer = 3;//自动播放间隔时间
+		
+			 //box.add({"url":"图片地址","title":"悬浮标题","href":"链接地址"})
+			 box.add({"url":"Image/sponsorImage2.jpg","href":"http://www.davidsbridal.com/","title":""})
+			 box.add({"url":"Image/halfmoon-bay.png","href":"http://www.ritzcarlton.com/en/Properties/HalfMoonBay","title":""})
+			 box.add({"url":"Image/santa-clara-mission.png","href":"https://www.scu.edu/university-operations/facilities/space-data/building-information/mission-church/","title":""})
+			 box.add({"url":"Image/ritz-carlton.png","href":"http://www.ritzcarlton.com/","title":""})
+			 box.show();
+			</script>
+		</div>
+		<!--
+           <a href="http://www.davidsbridal.com/" target="_blank"><img class="sponsorImage" src="Image/sponsorImage2.jpg" alt="sponsor"/></a> 
             </div>
-        
+        -->
        
     </div>
+</div>
 
     
  <!---footer-->
