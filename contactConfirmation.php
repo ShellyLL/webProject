@@ -106,45 +106,29 @@
 		<div class="dropdown" id="more">
 		  <a class="nodropdown" href="contactUS.html">More</a>
 		</div>	
-	</div>
-	<!---common head end-->
+	</div
 
-<div class="row item">
-	<br><br><br><br>
-</div>
+	<div class="row item">
+		<br><br><br><br><br><br><br><br><br>
+	</div>
 
 	<div class="row item" id="confirmation">
     	<div id="confirmationFirst">
-    		<h2>Thank you for Shopping with PartyJoy!</h2>
+    		<h2>Dear <?php
+				$name = @trim($_POST["name"]);
+				print ("$name");?>:
+			</h2>
+			<h3> Thank You for Your Message. Our Team will Response within 24 Hours.
+				 Thanks again for visiting PartyJoy! </h3>
+				 <br>
         </div>
     </div>
-    
-    <br>
-    <br>
-    
-    <div class="row item" id="confirmation2">
-    		
-            <div class="seven columns">
-            <h2>Order Information: </h2>
-        	<p class="confirmationText">Event: Wedding</p>
-            <p class="confirmationText">Date: Aug 25, 2016</p>
-            <p class="confirmationText">Guest Number: 20</p>
-            <p class="confirmationText">Venue Location: The Ritz-Carlton Half Moon Bay, California 94019</p>
-            <p class="confirmationText">Catering: The Ritz-Carlton Half Moon Bay</p>
-            <p class="confirmationText">Docoration: The Ritz-Carlton Half Moon Bay</p>
-            <p class="confirmationText">Service: The Ritz-Carlton Half Moon Bay</p>
-            <p class="confirmationText">Dressing: David's Bridal and Banana Republic</p>
-            </div>
-            
-            <div class="four column" id = "confirmationImage">
-            <a href="http://www.davidsbridal.com/" target="_blank"><img class="sponsorImage" src="Image/sponsorImage2.jpg" alt="sponsor"/></a> 
-            </div>
-        
-       
-    </div>
 
-    
- <!---footer-->
+    <div class="row item">
+		<br><br><br><br>
+	</div>
+
+    <!---footer-->
 	<div class="footer"> 
 			<div class="social">
 				<p>Connect with Us: </p>

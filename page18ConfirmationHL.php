@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html>
 
+<?php
+	$xml = simplexml_load_file("db.xml"); 
+	$occasion = $xml->occasion;
+
+	$venue = $xml->venue;
+    foreach($xml->venues->children() as $v) {
+		if ($v->getName() == $venue) {
+			$venuePrice = $v->price;
+			break;
+		}
+	}
+	$catering = $xml->catering;
+	foreach($xml->caterings->children() as $v) {
+		if ($v->getName() == $catering) {
+			$cateringPrice = $v->price;
+			break;
+		}
+	}
+	$decoration = $xml->decoration;
+	foreach($xml->decorations->children() as $v) {
+		if ($v->getName() == $decoration) {
+			$decorationPrice = $v->price;
+			break;
+		}
+	}
+	$service = $xml->service;
+	foreach($xml->services->children() as $v) {
+		if ($v->getName() == $service) {
+			$servicePrice = $v->price;
+			break;
+		}
+	}
+	$attire = $xml->attire;
+	foreach($xml->attires->children() as $v) {
+		if ($v->getName() == $attire) {
+			$attirePrice = $v->price;
+			break;
+		}
+	}
+
+	$subtotal = $venuePrice + $cateringPrice + $decorationPrice + $servicePrice + $attirePrice;
+	$tax = $subtotal * 0.0875;
+	$total = $subtotal + $tax;
+
+	$guestnumber = $xml->guestnumber;
+	$location = $xml->location;
+?>
+
 <head>
     <!--- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>PartyJoy | Contact</title>
-    
-    <meta charset="utf-8">
+    <title>PartyJoy | Confirmation</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!---css & js-->
@@ -24,6 +70,7 @@
 	<link rel="shortcut icon" href="Image/logoOnly.png" >
     <link rel="icon" href="Image/logoOnly.png">
 
+
 </head>
 
 <body>
@@ -32,12 +79,6 @@
 	<div class="header">
 		<div class="logo">
 			<img id="logoImage" src="Image/headerLogoImage.png" alt="logo" />
-		</div>
-		<div class="signInUp">
-			<ul class="signInUpList">
-				<li id="logIn"><a title="Login to PartyJoy" href="Page5SignInXiaoyu.html">Log In</a></li>
-				<li id="signUp"><a title="Signup to PartyJoy" href="Page4SignUpXiaoyu.html">Sign Up</a></li>	
-			</ul>
 		</div>
 	</div>
 	
@@ -115,31 +156,43 @@
 		</div>	
 	</div>
 	<!---common head end-->
+
+<div class="row item">
+	<br><br><br><br>
+</div>
+
+	<div class="row item" id="confirmation">
+    	<div id="confirmationFirst">
+    		<h2>Thank you for Shopping with PartyJoy!</h2>
+        </div>
+    </div>
     
-<div class="row item" id="contactUS">
-   
-	<div id="containerContact">
-  		<form method="post" action="http://localhost:8888/contact.php" accept-charset="utf-8">
+    <br>
+    <br>
+    
+    <div class="row item" id="confirmation2">
+    		
+            <div class="seven columns">
+            <h2>Order Information: </h2>
+        	<p class="confirmationText">Event: <?php print $occasion; ?></p>
+            <p class="confirmationText">Guest Number: <?php print $guestnumber; ?></p>
+            <p class="confirmationText">Venue Location: <?php print $venue; ?></p>
+            <p class="confirmationText">Catering: <?php print $catering; ?></p>
+            <p class="confirmationText">Docoration: <?php print $decoration; ?></p>
+            <p class="confirmationText">Service: <?php print $service; ?></p>
+            <p class="confirmationText">Dressing: <?php print $attire; ?></p>
+            <br>
+            </div>
+            
+            <div class="four column" id = "confirmationImage">
+            <a href="http://www.davidsbridal.com/" target="_blank"><img class="sponsorImage" src="Image/sponsorImage2.jpg" alt="sponsor"/></a> 
+            </div>
+        
+       
+    </div>
 
-	    <p>
-      <label>Your Name</label>
-      <input type="text" name="name" placeholder="Lisa Lee"/>
-      </p>
-        <p>
-      <label>Email Address</label>
-      <input name="email" type="email" placeholder="lisaLee@gmail.com">
-      </p>
-          
-      <p>
-      <label>Message</label>
-      <textarea name="message" placeholder=""></textarea>
-      </p>
-    <input type="submit" value="Submit"/>
-  </form>
-</div>
-</div>
-
-<!---footer-->
+    
+ <!---footer-->
 	<div class="footer"> 
 			<div class="social">
 				<p>Connect with Us: </p>
@@ -156,7 +209,7 @@
 			</div>
 	        <div class="copyright">© Made by PartyJoy All rights reserved. Photo source: Google Photo</div>       
 	</div> 
-<!---footer end-->
-
+<!---footer end-->   
+    
 </body>
 </html>

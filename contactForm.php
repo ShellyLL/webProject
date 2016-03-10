@@ -5,7 +5,9 @@
     <!--- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>PartyJoy | Confirmation</title>
+    <title>PartyJoy | Contact</title>
+    
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!---css & js-->
@@ -21,7 +23,6 @@
 <!---favicon-->
 	<link rel="shortcut icon" href="Image/logoOnly.png" >
     <link rel="icon" href="Image/logoOnly.png">
-
 
 </head>
 
@@ -106,29 +107,33 @@
 		<div class="dropdown" id="more">
 		  <a class="nodropdown" href="contactUS.html">More</a>
 		</div>	
-	</div
-
-	<div class="row item">
-		<br><br><br><br><br><br><br>
 	</div>
+	<!---common head end-->
+    
+<div class="row item" id="contactUS">
+   
+	<div id="containerContact">
+  		<form method="post" action="http://localhost:8888/webProject/contactConfirmation.php" accept-charset="utf-8">
 
-	<div class="row item" id="confirmation">
-    	<div id="confirmationFirst">
-    		<h2>Dear <?php
-				$name = @trim($_POST["name"]);
-				print ("$name");?>:
-			</h2>
-			<h3> Thank You for Your Message. Our Team will Response within 24 Hours.
-				 Thanks again for visiting PartyJoy! </h3>
-				 <br>
-        </div>
-    </div>
+	    <p>
+      <label>Your Name</label>
+      <input type="text" name="name" placeholder="Lisa Lee"/>
+      </p>
+        <p>
+      <label>Email Address</label>
+      <input name="email" type="email" placeholder="lisaLee@gmail.com">
+      </p>
+          
+      <p>
+      <label>Message</label>
+      <textarea name="message" placeholder=""></textarea>
+      </p>
+    <input type="submit" value="Submit"/>
+  </form>
+</div>
+</div>
 
-    <div class="row item">
-		<br><br><br><br>
-	</div>
-
-    <!---footer-->
+<!---footer-->
 	<div class="footer"> 
 			<div class="social">
 				<p>Connect with Us: </p>
@@ -145,7 +150,7 @@
 			</div>
 	        <div class="copyright">© Made by PartyJoy All rights reserved. Photo source: Google Photo</div>       
 	</div> 
-<!---footer end-->   
-    
+<!---footer end-->
+
 </body>
 </html>
