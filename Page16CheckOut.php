@@ -234,7 +234,7 @@
 
 <!---go to payment -->
 <div class="paynow">
-	<p><a href="page17PaymentHL.html">Pay Now</a></p>
+	<p><a href="page17PaymentHL.php">Pay Now</a></p>
 </div>
 <!---footer-->
 	<div class="footer"> 
