@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<payment>
+		
+    <cardNumber>1233</cardNumber>
+    <cardDate>12/23</cardDate>
+    <securityCode>1234</securityCode>
+    <zipCode>124</zipCode>   
+</payment>
