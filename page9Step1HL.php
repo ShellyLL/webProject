@@ -126,13 +126,20 @@
 	<!---common head end-->
     <br>
 	<div class="row item">
-    	<div class="seven columns">
+		<div class="one column"></div>
+
+    	<div class="firstAndThrid">
         	<div class="container">
     			<button class="button" onclick="location.href='/webProject/page9Step1HL.php?item=Wedding';"><img class="howToImage" src="Image/step1Images/wedding.jpg" alt="wedding"></button>
-        	<div class="howToCaption"><h4>Wedding</h4></div>
-         </div>
+        	    <div class="howToCaption"><h4>Wedding</h4></div>
+            </div>
    		</div> <!-- end of seven colums-->
-        
+
+
+        <div class="three columns">
+			<img class="howToImage" src="Image/step1Images/blank.jpg">
+        </div>
+
         <div class="firstAndThrid">
         	<div class="container">
     			<button class="button" onclick="location.href='/webProject/page9Step1HL.php?item=Birthday';"><img class="howToImage" src="Image/step1Images/birthday.jpg" alt="birthday"></button>
@@ -142,13 +149,15 @@
 	</div>
     
     <div class="row item">
-    	<div class="four columns">
+    	 <div class="firstAndThrid">
         	<div class="container">
     			<button class="button" onclick="location.href='/webProject/page9Step1HL.php?item=House-Warming';"><img class="howToImage" src="Image/step1Images/houseWarming.jpg" alt="houseWarming" name="houseWarming"></button>
         	<div class="howToCaption"><h4>House Warming</h4></div>
          </div>
    		</div> <!-- end of eight colums-->
         
+        <div class="half column"></div>
+
         <div class="four columns">
         	<div class="container">
     			<img class="howToImage" src="Image/step1Images/person.jpg" alt="personChoose">
@@ -156,6 +165,8 @@
          </div>
    		</div> <!-- end of eight colums-->
         
+        <div class="halfhalf column"></div>
+
         <div class="firstAndThrid">
         	<div class="container">
     			<button class="button" onclick="location.href='/webProject/page9Step1HL.php?item=Baby-Shower';"><img class="howToImage" src="Image/step1Images/babyShower.jpg" alt="babyShower"></button>
@@ -164,14 +175,19 @@
    		</div> <!-- end of eight colums-->
 	</div>
     
-        <div class="row item">
-    	<div class="seven columns">
+    <div class="row item">
+        <div class="one column"></div>
+    	 <div class="firstAndThrid">
         	<div class="container">
     			<button class="button" onclick="location.href='/webProject/page9Step1HL.php?item=Holiday-Celebration';"><img class="howToImage" src="Image/step1Images/holiday.jpg" alt="holiday"></button>
         	<div class="howToCaption"><h4>Holiday Celebration</h4></div>
          </div>
    		</div> <!-- end of seven colums-->
         
+         <div class="three columns">
+			<img class="howToImage" src="Image/step1Images/blank.jpg">
+        </div>
+
         <div class="firstAndThrid">
         	<div class="container">
     			<button class="button" onclick="location.href='/webProject/page9Step1HL.php?item=Corporation-Event';"><img class="howToImage" src="Image/step1Images/corporation.jpg" alt="Corporation Event"></button>
