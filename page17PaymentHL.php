@@ -15,11 +15,11 @@
     <script src="jquery.payment.js"></script>
 	<script src="Js/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="Js/pptBox.js"></script>
-    
+
 	 <!-- CSS
     ================================================== -->
     <link rel="stylesheet" href="page2ExamplesHL.css">
-    
+
 <!---favicon-->
 	<link rel="shortcut icon" href="Image/logoOnly.png" >
     <link rel="icon" href="Image/logoOnly.png">
@@ -46,7 +46,7 @@
       });
     });
   </script>
-    
+
 </head>
 
 <body>
@@ -57,7 +57,7 @@
 			<img id="logoImage" src="Image/headerLogoImage.png" alt="logo" />
 		</div>
 	</div>
-	
+
 	<div class="navbar">
 		<div class="dropdown" id="home">
 		  <a class="nodropdown" href="Page1HomePage.html">Home</a>
@@ -65,57 +65,57 @@
 		<div class="dropdown">
 		  <button class="dropbtn">Occasion</button>
 		  <div class="dropdown-content">
-		    <a href="page9Step1HL.html">Wedding</a>
-		    <a href="page9Step1HL.html">Birthday Party</a>
-		    <a href="page9Step1HL.html">House Warming</a>
-		    <a href="page9Step1HL.html">Baby Shower</a>
+		    <a href="page9Step1HL.php">Wedding</a>
+		    <a href="page9Step1HL.php">Birthday Party</a>
+		    <a href="page9Step1HL.php">House Warming</a>
+		    <a href="page9Step1HL.php">Baby Shower</a>
 		  </div>
 		</div>
 		<div class="dropdown">
 		  <button class="dropbtn">Venue</button>
 		  <div class="dropdown-content">
-		    <a href="Page11Step3.html">Hotel</a>
-		    <a href="Page11Step3.html">Church</a>
-		    <a href="Page11Step3.html">Outdoor</a>
-		    <a href="Page11Step3.html">Backyards</a>
+		    <a href="Page11Step3.php">Hotel</a>
+		    <a href="Page11Step3.php">Church</a>
+		    <a href="Page11Step3.php">Outdoor</a>
+		    <a href="Page11Step3.php">Backyards</a>
 		  </div>
 		 </div>
 		 <div class="dropdown">
 		  <button class="dropbtn">Catering</button>
 		  <div class="dropdown-content">
-		    <a href="Page12Step4.html">Meal</a>
-		    <a href="Page12Step4.html">Drinks</a>
-		    <a href="Page12Step4.html">Dessert</a>
-		    <a href="Page12Step4.html">Snacks</a>
+		    <a href="Page12Step4.php">Meal</a>
+		    <a href="Page12Step4.php">Drinks</a>
+		    <a href="Page12Step4.php">Dessert</a>
+		    <a href="Page12Step4.php">Snacks</a>
 		  </div>
 		</div>
 		<div class="dropdown">
 		  <button class="dropbtn">Decoration</button>
 		  <div class="dropdown-content">
-		  	<a href="Page13Step5.html">Table</a>
-		    <a href="Page13Step5.html">Flower</a>
-		    <a href="Page13Step5.html">Ballon</a>
-		    <a href="Page13Step5.html">Accessories</a>
-		    <a href="Page13Step5.html">Lighting</a>
+		  	<a href="Page13Step5.php">Table</a>
+		    <a href="Page13Step5.php">Flower</a>
+		    <a href="Page13Step5.php">Ballon</a>
+		    <a href="Page13Step5.php">Accessories</a>
+		    <a href="Page13Step5.php">Lighting</a>
 		  </div>
 		</div>
 		<div class="dropdown">
 		  <button class="dropbtn">Service</button>
 		  <div class="dropdown-content">
-		    <a href="Page14Step6.html">EMC&DJ</a>
-		    <a href="Page14Step6.html">Photo</a>
-		    <a href="Page14Step6.html">Video</a>
-		    <a href="Page14Step6.html">Cleaning</a>
-		    <a href="Page14Step6.html">Serving</a>
+		    <a href="Page14Step6.php">EMC&DJ</a>
+		    <a href="Page14Step6.php">Photo</a>
+		    <a href="Page14Step6.php">Video</a>
+		    <a href="Page14Step6.php">Cleaning</a>
+		    <a href="Page14Step6.php">Serving</a>
 		  </div>
 		</div>
 		<div class="dropdown">
 		  <button class="dropbtn">Attire</button>
 		  <div class="dropdown-content">
-		    <a href="Page15Step7.html">Dress</a>
-		    <a href="Page15Step7.html">Suit</a>
-		    <a href="Page15Step7.html">Hair Style</a>
-		    <a href="Page15Step7.html">Makeup</a>
+		    <a href="Page15Step7.php">Dress</a>
+		    <a href="Page15Step7.php">Suit</a>
+		    <a href="Page15Step7.php">Hair Style</a>
+		    <a href="Page15Step7.php">Makeup</a>
 		  </div>
 		</div>
 		<div class="dropdown">
@@ -129,14 +129,14 @@
 		</div>
 		<div class="dropdown" id="more">
 		  <a class="nodropdown" href="contactUS.html">More</a>
-		</div>	
+		</div>
 	</div>
 	<!---common head end-->
 
 <div class="row item">
-   
+
 	<div id="containerPayment">
-  		
+
   		<form method="POST">
   		<!--
   		<form method="post" action="http://localhost:8888/payment.php">
@@ -171,7 +171,7 @@
 
 <!-footer-->
 
-	<div class="footer"> 
+	<div class="footer">
 			<div class="social">
 				<p>Connect with Us: </p>
 		    	<a href="http://www.facebook.com"><img src="Image/facebook.png" alt="facebookicon" /> </a>
@@ -185,8 +185,8 @@
 				<a class="foot" href="career.html">Career</a>
 				<a class="foot" href="help.html">Help</a>
 			</div>
-	        <div class="copyright">© Made by PartyJoy All rights reserved. Photo source: Google Photo</div>       
-	</div> 
+	        <div class="copyright">© Made by PartyJoy All rights reserved. Photo source: Google Photo</div>
+	</div>
 <!---footer end-->
 
 <!-- Script

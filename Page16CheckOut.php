@@ -2,7 +2,7 @@
 <html>
 
 <?php
-	$xml = simplexml_load_file("db.xml"); 
+	$xml = simplexml_load_file("db.xml");
 	$occasion = $xml->occasion;
 
 	$venue = $xml->venue;
@@ -72,11 +72,11 @@
 		<div class="signInUp">
 			<ul class="signInUpList">
 				<li id="logIn"><a title="Login to PartyJoy" href="Page5SignInXiaoyu.html">Log In</a></li>
-				<li id="signUp"><a title="Signup to PartyJoy" href="Page4SignUpXiaoyu.html">Sign Up</a></li>	
+				<li id="signUp"><a title="Signup to PartyJoy" href="Page4SignUpXiaoyu.html">Sign Up</a></li>
 			</ul>
 		</div>
 	</div>
-	
+
 	<div class="navbar">
 		<div class="dropdown" id="home">
 		  <a class="nodropdown" href="Page1HomePage.html">Home</a>
@@ -148,7 +148,7 @@
 		</div>
 		<div class="dropdown" id="more">
 		  <a class="nodropdown" href="contactUS.html">More</a>
-		</div>	
+		</div>
 	</div>
 	<!---common head end-->
 <div class="review">
@@ -162,7 +162,7 @@
 		<p class="item">Your Occasion</p>
 		<p class="details"><?php print $occasion; ?></p>
 		<br><br><br><br><br><br>
-		
+
 	</div>
 
 	<div class="singleStepContainer">
@@ -171,7 +171,7 @@
 		<p class="details">guest#: <?php print $guestnumber; ?></p>
 		<p class="details">location: <?php print $location; ?></p>
 		<br><br><br><br><br><br>
-		
+
 	</div>
 
 	<div class="singleStepContainer">
@@ -179,9 +179,9 @@
 		<p class="item">Venue</p>
 		<p class="details"><?php print $venue; ?></p>
 		<p class="details">$<?php print $venuePrice; ?></p>
-		
+
 		<br><br><br><br><br><br>
-		
+
 	</div>
 
 	<div class="singleStepContainer">
@@ -189,18 +189,18 @@
 		<p class="item">Catering</p>
 		<p class="details"><?php print $catering; ?></p>
 		<p class="details">$<?php print $cateringPrice; ?></p>
-		
+
 		<br><br><br><br><br><br>
-		
+
 	</div>
 	<div class="singleStepContainer">
 		<img class="icon" src="Image/decorationIcon.png" alt="decoarationIcon">
 		<p class="item">Decoration</p>
 		<p class="details"><?php print $decoration; ?></p>
 		<p class="details">$<?php print $decorationPrice; ?></p>
-		
+
 		<br><br><br><br><br><br>
-		
+
 	</div>
 
 	<div class="singleStepContainer">
@@ -208,9 +208,9 @@
 		<p class="item">Service</p>
 		<p class="details"><?php print $service; ?></p>
 		<p class="details">$<?php print $servicePrice; ?></p>
-		
+
 		<br><br><br><br><br><br>
-		
+
 	</div>
 
 	<div class="singleStepContainer">
@@ -218,9 +218,9 @@
 		<p class="item">Attire</p>
 		<p class="details"><?php print $attire; ?></p>
 		<p class="details">$<?php print $attirePrice; ?></p>
-		
+
 		<br><br><br><br><br><br>
-		
+
 	</div>
 </div>
 
@@ -234,10 +234,10 @@
 
 <!---go to payment -->
 <div class="paynow">
-	<p><a href="page17PaymentHL.html">Pay Now</a></p>
+	<p><a href="page17PaymentHL.php">Pay Now</a></p>
 </div>
 <!---footer-->
-	<div class="footer"> 
+	<div class="footer">
 			<div class="social">
 				<p>Connect with Us: </p>
 		    	<a href="http://www.facebook.com"><img src="Image/facebook.png" alt="facebookicon" /> </a>
@@ -251,8 +251,8 @@
 				<a class="foot" href="career.html">Career</a>
 				<a class="foot" href="help.html">Help</a>
 			</div>
-	        <div class="copyright">© Made by PartyJoy All rights reserved. Photo source: Google Photo</div>       
-	</div> 
+	        <div class="copyright">© Made by PartyJoy All rights reserved. Photo source: Google Photo</div>
+	</div>
 <!---footer end-->
 
 </body>
