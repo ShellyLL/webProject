@@ -250,6 +250,22 @@ button[type="submit"]{
   font-weight: bold;
 }
 
+input[type="submit"]{
+  width: 100%;
+  background: rgba(94,217,235,0.3);
+  text-transform: uppercase;
+  text-align:center;
+  letter-spacing: 0.06em;
+  border: none;
+  padding: 1.5em 0.8em;
+  color: #5ed9eb;
+  margin-top: 2em;
+  margin-bottom: 0;
+  font-size: 1em;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
 input[type="submit"]:hover{
   background: #5ed8eb;
   border-color: #5ed9eb;

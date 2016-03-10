@@ -22,21 +22,24 @@
   margin: 0; 
   background-color: white;
 }
-.signInUpList {
-	list-style-type: none;
-  overflow: hidden;
+
+#myaccount{
   position: relative;
-  left: 35%;
+  top: 15px; 
+  left: 250px;
 }
-.signInUpList li{
-	float:left;
-	border: orange solid 3px;  
-	border-radius: 8px; 
-  margin-left:10px;
-  margin-top:20px;
-  bottom:20px;
+#signup{
+  float: right;
+  font-family: verdana;
+  text-decoration: none;
+  border: orange solid 2px;
+  padding: 3px;
+  border-radius: 4px;
+  position: relative;
+  top: 30px;
+  right: 50px;
 }
-#logIn a{
+/*#logIn a{
 	padding: 14px 14px;
 	text-decoration: none;
 	font-family:Verdana;
@@ -47,6 +50,11 @@
 	text-decoration: none;
 	font-family:Verdana;
   font-size: 20px;
+}*/
+
+#myaccount {
+  width: 20%;
+  height: 20%;
 }
 /*---header end---*/
 
