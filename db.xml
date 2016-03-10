@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <party>
-	<occasion>Baby-Shower</occasion>
+	<occasion>Wedding</occasion>
 	
-	<guestnumber>20</guestnumber>
-	<date>2016-03-08</date>
-	<time>14:02</time>
-	<location>chicago</location>
+	<guestnumber>10</guestnumber>
+	<date>2016-03-09</date>
+	<time>01:01</time>
+	<location>santa clara</location>
 	<inout>Outdoor</inout>
-	<comment>111</comment>
+	<comment>sss</comment>
 
-	<venue>Half-Moon-Bay</venue>
-	<catering>Tiramisu</catering>
-	<decoration>Colorful-Ballon</decoration>
+	<venue>Mission-Santa-Clara</venue>
+	<catering>Ice-Cream</catering>
+	<decoration>Home-Lighting</decoration>
 	<service>Photography</service>
-	<attire>Giorgio-Armani</attire>
+	<attire>Western-Style</attire>
 
 	<venues>
 		<Ritz-Carlton>

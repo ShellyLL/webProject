@@ -57,10 +57,10 @@
 		<div class="dropdown">
 		  <button class="dropbtn">Occasion</button>
 		  <div class="dropdown-content">
-		    <a href="page9Step1HL.php?item=wedding">Wedding</a>
-		    <a href="page9Step1HL.php?item=birthday">Birthday Party</a>
-		    <a href="page9Step1HL.html">House Warming</a>
-		    <a href="page9Step1HL.html">Baby Shower</a>
+		    <a href="page9Step1HL.php">Wedding</a>
+		    <a href="page9Step1HL.php">Birthday Party</a>
+		    <a href="page9Step1HL.php">House Warming</a>
+		    <a href="page9Step1HL.php">Baby Shower</a>
 		  </div>
 		</div>
 		<div class="dropdown">

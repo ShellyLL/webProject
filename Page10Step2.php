@@ -264,9 +264,9 @@ function test_input($data) {
 -->
 <div class="nav">
 		<ul class="nav-bottom">
-			<li class="prev-next"><a class="prev-next-link" href="page9Step1HL.html">
+			<li class="prev-next"><a class="prev-next-link" href="page9Step1HL.php">
 				<img class="prev-next-pic" src="Image/prev.png" alt="prev"></a></li>
-			<li class="prev-next"><li class="prev-next"><a class="prev-next-link" href="Page11Step3.html">
+			<li class="prev-next"><li class="prev-next"><a class="prev-next-link" href="Page11Step3.php">
 				<img class="prev-next-pic" src="Image/next.png" alt="prev"></a></li>
 		</ul>
 	</div>
