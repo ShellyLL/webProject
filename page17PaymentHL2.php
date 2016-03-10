@@ -32,11 +32,6 @@
 		<div class="logo">
 			<img id="logoImage" src="Image/headerLogoImage.png" alt="logo" />
 		</div>
-		<div class="signInUp">
-			
-				<a title="Login to PartyJoy" href="Page5SignInXiaoyu.html" id="myacct"><img src="Image/myaccount.png" id="myaccount" alt="myaccounticon"></a>
-			
-		</div>
 	</div>
 	
 	<div class="navbar">
@@ -114,117 +109,34 @@
 	</div>
 	<!---common head end-->
 
-<?php
-$xml = simplexml_load_file("payment.xml");
-
-// define variables and set to empty values
-$cardNumberErr = $cardDateErr = $securityCodeErr = $zipCodeErr = "";
-$cardNumber = $cardDate = $securityCode = $zipCode ="";
-$flag = false;
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-   if (empty($_POST["cardNumber"])) {
-     $cardNumberErr = "Required";
-   } else {
-     	$cardNumber = test_input($_POST["cardNumber"]);
-
-     	if (!preg_match("/^[0-9 ]*$/",$cardNumber)) {
-     		$cardNumberErr = "Only Numbers and Space"; 
- 		}else{
- 			echo $cardNumber;
- 			$xml->cardNumber = $cardNumber;
- 			$xml->asXML("payment.xml");
- 		}
- 	}
-
- 	if (empty($_POST["cardDate"])) {
-     $cardDateErr = "Required";
-   } else {
-     $cardDate = test_input($_POST["cardDate"]);
-     $xml->cardDate = $cardDate;
-     $xml->asXML("payment.xml");
-	}
-
-   if (empty($_POST["securityCode"])) {
-     $securityCodeErr = "Required";
-   } else {
-   		$securityCode = test_input($_POST["securityCode"]);
-   		if (!is_numeric($securityCode)) {
-       		$securityCodeErr = "Only numbers allowed";
-       	}	 
-   		else {
-     		$xml->securityCode = $securityCode;
-     		$xml->asXML("payment.xml");
-   		}
- 	}
-
-
- 	$zipCode = test_input($_POST["zipCode"]);
-     if (!is_numeric($zipCode)) {
-       $zipCodeErr = "Only numbers allowed"; 
-     }else{
-     	$xml->zipCode = $zipCode;
-     	$xml->asXML("payment.xml");
-     	  	
-     }
-
-     $xml->asXML("payment.xml");
-	
-}
-
-$xml2 = simplexml_load_file("users.xml") or die ("Error: Cannot Open Sever Database");
-
-foreach($xml2->zipCode as $zipCode) {
-	#echo "testforeach";
-    if(empty($zipCode)) {
-    	break;
-    	$flag = false;
-    }
-}
-
-$flag = true;
-if ($flag == true) {
-	//header("Location: http://localhost:8888/webProject/page18ConfirmationHL.php");
-}
-
-function test_input($data) {
-   $data = trim($data);
-   $data = stripslashes($data);
-   $data = htmlspecialchars($data);
-   return $data;
-}
-
-?>
-
 <div class="row item">
    
 	<div id="containerPayment">
   		
-  	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
+  	<form method="post" action="http://localhost:8888/webProject/paymentValid.php" > 
 
 	    <p>
       <label>Card Number</label>
-      <span class="error2">* <?php echo $cardNumberErr;?></span>
-      <input type="text" name="cardNumber" placeholder="1234 5678 9796 1251" value="<?php echo $cardNumber;?>">
+      <span class="error2">*</span>
+      <input type="text" name="cardNumber" placeholder="1234 5678 9796 1251">
     </p>
         <p>
       <label>Expiration Date</label>
-      <span class="error2">* <?php echo $cardDateErr;?></span>
-      <input type="text" name="cardDate" placeholder="03/2017" value="<?php echo $cardDate;?>">
+      <span class="error2">*</span>
+      <input type="text" name="cardDate" placeholder="03/2017">
     </p>
         <p>
       <label>Security Code</label>
-      <span class="error2">* <?php echo $securityCodeErr;?></span>
-      <input type="text" name="securityCode" placeholder="123" value="<?php echo $securityCode;?>">
+      <span class="error2">*</span>
+      <input type="text" name="securityCode" placeholder="123">
     </p>
     <p>
       <label>Billing Zip Code</label>
-      <input name="zipCode" type="text" placeholder="95053" value="<?php echo $zipCode;?>">
+      <input name="zipCode" type="text" placeholder="95053">
     </p>
   <input type="submit" name="submit" value="Submit">
 
   </form>
-  <?php header("Location: http://localhost:8888/webProject/page18ConfirmationHL.php"); ?>
 </div>
 </div>
 
