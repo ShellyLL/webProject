@@ -48,7 +48,7 @@ $flag = false;
      }
 
      $xml->asXML("payment.xml");
-	header("Location: Page6MyAccountXiaoyu.html");
+	include("page18ConfirmationHL2.php");
 
 
 function test_input($data) {

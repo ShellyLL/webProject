@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html>
 
+<?php
+	$xml = simplexml_load_file("db.xml"); 
+	$occasion = $xml->occasion;
+
+	$venue = $xml->venue;
+    foreach($xml->venues->children() as $v) {
+		if ($v->getName() == $venue) {
+			$venuePrice = $v->price;
+			break;
+		}
+	}
+	$catering = $xml->catering;
+	foreach($xml->caterings->children() as $v) {
+		if ($v->getName() == $catering) {
+			$cateringPrice = $v->price;
+			break;
+		}
+	}
+	$decoration = $xml->decoration;
+	foreach($xml->decorations->children() as $v) {
+		if ($v->getName() == $decoration) {
+			$decorationPrice = $v->price;
+			break;
+		}
+	}
+	$service = $xml->service;
+	foreach($xml->services->children() as $v) {
+		if ($v->getName() == $service) {
+			$servicePrice = $v->price;
+			break;
+		}
+	}
+	$attire = $xml->attire;
+	foreach($xml->attires->children() as $v) {
+		if ($v->getName() == $attire) {
+			$attirePrice = $v->price;
+			break;
+		}
+	}
+
+	$subtotal = $venuePrice + $cateringPrice + $decorationPrice + $servicePrice + $attirePrice;
+	$tax = $subtotal * 0.0875;
+	$total = $subtotal + $tax;
+
+	$guestnumber = $xml->guestnumber;
+	$location = $xml->location;
+?>
+
 <head>
     <!--- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>PartyJoy | Payment</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PartyJoy | Confirmation</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!---css & js-->
     <link rel="stylesheet" type="text/css" href="Css/Page1HomePageStyle.css">
@@ -22,7 +70,7 @@
 	<link rel="shortcut icon" href="Image/logoOnly.png" >
     <link rel="icon" href="Image/logoOnly.png">
 
-    
+
 </head>
 
 <body>
@@ -110,41 +158,58 @@
 	<!---common head end-->
 
 <div class="row item">
-   
-	<div id="containerPayment">
-  		
-  	<form method="post" action="http://localhost:8888/webProject/paymentValid.php" > 
-
-	    <p>
-      <label>Card Number</label>
-      <span class="error2">*</span>
-      <input type="text" name="cardNumber" placeholder="1234 5678 9796 1251">
-    </p>
-        <p>
-      <label>Expiration Date</label>
-      <span class="error2">*</span>
-      <input type="text" name="cardDate" placeholder="03/2017">
-    </p>
-        <p>
-      <label>Security Code</label>
-      <span class="error2">*</span>
-      <input type="text" name="securityCode" placeholder="123">
-    </p>
-    <p>
-      <label>Billing Zip Code</label>
-      <input name="zipCode" type="text" placeholder="95053">
-    </p>
-  <input type="submit" name="submit" value="Submit">
-
-  </form>
-</div>
+	<br><br><br><br>
 </div>
 
-<div class="row item" id="seeConfirm">
-	<p><a href="page18ConfirmationHL.php">After Payment Submission, You will see the Order Confirmation</a></p>
+	<div class="row item" id="confirmation">
+    	<div id="confirmationFirst">
+    		<h2>Thank you for Shopping with PartyJoy!</h2>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    
+    <div class="row item" id="confirmation2">
+    		
+            <div class="seven columns">
+            <h2>Order Information: </h2>
+        	<p class="confirmationText">Event: <?php print $occasion; ?></p>
+            <p class="confirmationText">Guest Number: <?php print $guestnumber; ?></p>
+            <p class="confirmationText">Venue Location: <?php print $venue; ?></p>
+            <p class="confirmationText">Catering: <?php print $catering; ?></p>
+            <p class="confirmationText">Docoration: <?php print $decoration; ?></p>
+            <p class="confirmationText">Service: <?php print $service; ?></p>
+            <p class="confirmationText">Dressing: <?php print $attire; ?></p>
+            <br>
+            </div>
+            
+            <div class="four column" id = "confirmationImage">
+            	<div id="focus" >
+			 <script>
+			 var box =new PPTBox();
+			 box.width = 300; //宽度
+			 box.height = 200;//高度
+			 box.autoplayer = 3;//自动播放间隔时间
+		
+			 //box.add({"url":"图片地址","title":"悬浮标题","href":"链接地址"})
+			 box.add({"url":"Image/sponsorImage2.jpg","href":"http://www.davidsbridal.com/","title":""})
+			 box.add({"url":"Image/halfmoon-bay.png","href":"http://www.ritzcarlton.com/en/Properties/HalfMoonBay","title":""})
+			 box.add({"url":"Image/santa-clara-mission.png","href":"https://www.scu.edu/university-operations/facilities/space-data/building-information/mission-church/","title":""})
+			 box.add({"url":"Image/ritz-carlton.png","href":"http://www.ritzcarlton.com/","title":""})
+			 box.show();
+			</script>
+		</div>
+		<!--
+           <a href="http://www.davidsbridal.com/" target="_blank"><img class="sponsorImage" src="Image/sponsorImage2.jpg" alt="sponsor"/></a> 
+            </div>
+        -->
+       
+    </div>
 </div>
 
-
+    
+ <!---footer-->
 	<div class="footer"> 
 			<div class="social">
 				<p>Connect with Us: </p>
@@ -161,10 +226,7 @@
 			</div>
 	        <div class="copyright">© Made by PartyJoy All rights reserved. Photo source: Google Photo</div>       
 	</div> 
-<!---footer end-->
-
-<!-- Script
-================================================== -->
-
+<!---footer end-->   
+    
 </body>
 </html>
