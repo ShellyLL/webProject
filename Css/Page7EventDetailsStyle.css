@@ -32,10 +32,11 @@
 .details {
 	font-family: verdana;
 	font-size: 20px;
-	color: darkgrey;
+	color: purple;
 }
 .price {
 	font-family: verdana;
+	color: purple;
 }
 
 .edit {

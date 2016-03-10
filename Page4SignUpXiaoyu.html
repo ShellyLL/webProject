@@ -23,10 +23,9 @@
 			<img id="logoImage" src="Image/headerLogoImage.png" alt="logo" />
 		</div>
 		<div class="signInUp">
-			<ul class="signInUpList">
-				<li id="logIn"><a title="Login to PartyJoy" href="Page5SignInXiaoyu.html">Log In</a></li>
-				<li id="signUp"><a title="Signup to PartyJoy" href="Page4SignUpXiaoyu.html">Sign Up</a></li>
-			</ul>
+			
+				<a title="Login to PartyJoy" href="Page5SignInXiaoyu.html" id="myacct"><img src="Image/myaccount.png" id="myaccount" alt="myaccounticon"></a>
+			
 		</div>
 	</div>
 

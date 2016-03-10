@@ -80,6 +80,11 @@
 		<div class="logo">
 			<img id="logoImage" src="Image/headerLogoImage.png" alt="logo" />
 		</div>
+		<div class="signInUp">
+			
+				<a title="Login to PartyJoy" href="Page5SignInXiaoyu.html" id="myacct"><img src="Image/myaccount.png" id="myaccount" alt="myaccounticon"></a>
+			
+		</div>
 	</div>
 	
 	<div class="navbar">
