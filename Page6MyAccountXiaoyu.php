@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PartyJoy | SignUp</title>
+	<title>PartyJoy | MyAccount</title>
 	<!---common-->
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -104,45 +104,55 @@
 		</div>
 	</div>
 	<!---common head end-->
+
 	<div class = "transition">
 	</div>
 
-    <div class="SignUpWrapper">
-      <p class= "sign-head"> Sign Up a PartyJoy Account</p>
-      <div class = "container">
-      <form name="login" action="http://localhost:8888/webProject/signup.php" method="post" accept-charset="utf-8">
-              <label> First Name</label>
-              <input type="text" class="sign-up-input" name="firstname" placeholder="first name" required><br>
-              <label> Last Name</label>
-              <input type="text" class="sign-up-input" name="lastname" placeholder="last name" required><br>
-              <label>Email</label>
-              <input type="email" class="sign-up-input" name="email" placeholder="yourname@email.com" required><br>
-              <label>Password</label>
-              <input class="sign-up-input" type="password" name="password" placeholder="password" required><br>
-							<a id="submitButton1" href="Page5SignInXiaoyu.html">
-								<input id = "submitButton1" name="submit" type="submit" value="Submit">
-							</a>
-       </form>
-      </div>
-   </div>
+    <div class= "dashBoardWrapper">
+        <h2 class= "myAccountTitle"> Welcome back to your PartyJoy Account </h2>
+        <div id = "dashBoardContent">
+            <h3 class = "dashBoard"> DashBoard </h3>
 
-	 <!---footer-->
-	 	<div class="footer">
-	 			<div class="social">
-	 				<p>Connect with Us: </p>
-	 		    	<a href="http://www.facebook.com"><img src="Image/facebook.png" alt="facebookicon" /> </a>
-	 		    	<a href="http://www.linkedin.com"><img src="Image/linkedin.png" alt="linkedinicon" /> </a>
-	 		    	<a href="http://www.twitter.com"><img src="Image/twitter.png" alt="twittericon" /> </a>
-	 		    	<a href="http://www.instagram.com"><img src="Image/ins.png" alt="insicon" /> </a>
-	 		    </div>
-	 		    <div class="footnavbar">
-	 				<a class="foot" href="aboutUs.html">About Us</a>
-	 				<a class="foot" href="contactUS.html">Contact Us</a>
-	 				<a class="foot" href="career.html">Career</a>
-	 				<a class="foot" href="help.html">Help</a>
-	 			</div>
-	 	        <div class="copyright">© Made by PartyJoy All rights reserved. Photo source: Google Photo</div>
-	 	</div>
-	 <!---footer end-->
-	 </body>
+            <h4 class="PartyTag">Coming Party:</h4>
+            <ul id = "comingParty">
+              <li><a href = "page9Step1HL.php">New Party </a></li>
+            </ul>
+
+            <h4 class="PartyTag">History Party:</h4>
+            <ul id = "historyParty">
+              <li>July 4th Celebration Party</li>
+              <li>Mother's Anniversary Party</li>
+              <li> Mary's Baby Shower Party</li>
+            </ul>
+
+
+            <h4 class="PartyTag">Setting:</h4>
+            <ul id = "setting">
+							<li>first name: <?=$user->fname?></li>
+							<li>last name: <?=$user->lname?></li>
+              <li>email: <?=$user->email?></li>
+            </ul>
+        </div>
+      </div>
+
+
+			<!---footer-->
+	 	 	<div class="footer">
+	 	 			<div class="social">
+	 	 				<p>Connect with Us: </p>
+	 	 		    	<a href="http://www.facebook.com"><img src="Image/facebook.png" alt="facebookicon" /> </a>
+	 	 		    	<a href="http://www.linkedin.com"><img src="Image/linkedin.png" alt="linkedinicon" /> </a>
+	 	 		    	<a href="http://www.twitter.com"><img src="Image/twitter.png" alt="twittericon" /> </a>
+	 	 		    	<a href="http://www.instagram.com"><img src="Image/ins.png" alt="insicon" /> </a>
+	 	 		    </div>
+	 	 		    <div class="footnavbar">
+	 	 				<a class="foot" href="aboutUs.html">About Us</a>
+	 	 				<a class="foot" href="contactUS.html">Contact Us</a>
+	 	 				<a class="foot" href="career.html">Career</a>
+	 	 				<a class="foot" href="help.html">Help</a>
+	 	 			</div>
+	 	 	        <div class="copyright">© Made by PartyJoy All rights reserved. Photo source: Google Photo</div>
+	 	 	</div>
+	 	 <!---footer end-->
+	 	 </body>
 </html>
