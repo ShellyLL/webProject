@@ -9,11 +9,11 @@
 	<inout>Outdoor</inout>
 	<comment>sss</comment>
 
-	<venue>Mission-Santa-Clara</venue>
-	<catering>Ice-Cream</catering>
-	<decoration>Home-Lighting</decoration>
+	<venue>North-Park-Community-Center</venue>
+	<catering>Cheesecake</catering>
+	<decoration>Colorful-Ballon</decoration>
 	<service>Photography</service>
-	<attire>Western-Style</attire>
+	<attire>Short-Hair</attire>
 
 	<venues>
 		<Ritz-Carlton>
@@ -52,9 +52,9 @@
 		<Ewoodys-Community-Center>
 			<price>300</price>
 		</Ewoodys-Community-Center>
-		<North-Par-Community-Center>
+		<North-Park-Community-Center>
 			<price>200</price>
-		</North-Par-Community-Center>
+		</North-Park-Community-Center>
 	</venues>
 
 	<caterings>
