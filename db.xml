@@ -2,18 +2,18 @@
 <party>
 	<occasion>Wedding</occasion>
 	
-	<guestnumber>10</guestnumber>
-	<date>2016-03-09</date>
-	<time>01:01</time>
-	<location>santa clara</location>
-	<inout>Outdoor</inout>
-	<comment>sss</comment>
+	<guestnumber>50</guestnumber>
+	<date>2016-03-12</date>
+	<time>02:22</time>
+	<location>LA</location>
+	<inout>Indoor</inout>
+	<comment>party in la</comment>
 
-	<venue>Duke-Chapel</venue>
-	<catering>Beef</catering>
-	<decoration>Happy-Birthday-Ballon</decoration>
-	<service>Photography</service>
-	<attire>Vera-Wang</attire>
+	<venue>Coyote-Creek-Center</venue>
+	<catering>Chips</catering>
+	<decoration>Home-Lighting</decoration>
+	<service>Clean-Up</service>
+	<attire>Western-Style</attire>
 
 	<venues>
 		<Ritz-Carlton>
