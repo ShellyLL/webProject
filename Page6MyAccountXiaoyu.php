@@ -120,9 +120,9 @@
 
             <h4 class="PartyTag">History Party:</h4>
             <ul id = "historyParty">
-              <li>July 4th Celebration Party</li>
-              <li>Mother's Anniversary Party</li>
-              <li> Mary's Baby Shower Party</li>
+							  <li><a href = "classicpackage.php">Classic Package </a></li>
+								<li><a href = "popularpackage.php">Popular Package</a></li>
+								<li><a href = "luxurypackage.php">Luxury Package</a></li>
             </ul>
 
 
