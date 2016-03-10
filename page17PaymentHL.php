@@ -117,7 +117,6 @@ $cardNumberErr = $cardDateErr = $securityCodeErr = $zipCodeErr = "";
 $cardNumber = $cardDate = $securityCode = $zipCode ="";
 $flag = false;
 
-header('Location: https://www.google.com/');
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
    if (empty($_POST["cardNumber"])) {
      $cardNumberErr = "Required";
@@ -172,7 +171,7 @@ foreach($xml2->zipCode as $zipCode) {
 
 $flag = true;
 if ($flag == true) {
-	header("Location: http://localhost:8888/webProject/page18ConfirmationHL.php");
+	// header("Location: http://localhost:8888/webProject/page18ConfirmationHL.php");
 }
 
 function test_input($data) {
