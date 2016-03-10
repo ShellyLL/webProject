@@ -128,9 +128,9 @@
 
             <h4 class="PartyTag">Setting:</h4>
             <ul id = "setting">
-							<li><strong>First name: </strong><span style="color:red" "font-size: 20px;"><?=$user->fname?></span></li>
-							<li><strong>Last name: </strong><span style="color:red" "font-size: 40px;"><?=$user->lname?></span></li>
-              <li><strong>Email:</strong><span style="color:red" "font-size: 30px;"><?=$user->email?></span></li>
+							<li><strong>First name: </strong><span style="font-size:20px;color:red"><?=$user->fname?></span></li>
+							<li><strong>Last name: </strong><span style="font-size:20px;color:red"><?=$user->lname?></span></li>
+              <li><strong>Email:</strong><span style="font-size:20px;color:red"><?=$user->email?></span></li>
             </ul>
         </div>
       </div>
