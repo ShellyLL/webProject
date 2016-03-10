@@ -1,39 +1,35 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <!--- Basic Page Needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>PartyJoy | Confirmation</title>
+	<title>PartyJoy | MyAccount</title>
+	<!---common-->
+	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!---css & js-->
     <link rel="stylesheet" type="text/css" href="Css/Page1HomePageStyle.css">
     <link rel="stylesheet" type="text/css" href="Css/commonStyle.css">
+    <link rel="stylesheet" type="text/css" href="Css/XiaoyuStyle.css">
 	<script src="Js/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="Js/pptBox.js"></script>
-    
-	 <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="page2ExamplesHL.css">
-    
-<!---favicon-->
+	<!---favicon-->
 	<link rel="shortcut icon" href="Image/logoOnly.png" >
     <link rel="icon" href="Image/logoOnly.png">
-
-
 </head>
-
 <body>
-
-<!---common head-->
+	<!---common head-->
 	<div class="header">
 		<div class="logo">
 			<img id="logoImage" src="Image/headerLogoImage.png" alt="logo" />
 		</div>
+		<div class="signInUp">
+			<ul class="signInUpList">
+				<li id="logIn"><a title="Login to PartyJoy" href="Page5SignInXiaoyu.html">Log In</a></li>
+				<li id="signUp"><a title="Signup to PartyJoy" href="Page4SignUpXiaoyu.html">Sign Up</a></li>
+			</ul>
+		</div>
 	</div>
-	
+
 	<div class="navbar">
 		<div class="dropdown" id="home">
 		  <a class="nodropdown" href="Page1HomePage.html">Home</a>
@@ -107,45 +103,57 @@
 		  <a class="nodropdown" href="contactUS.html">More</a>
 		</div>
 	</div>
+	<!---common head end-->
 
-	<div class="row item">
-		<br><br><br><br><br><br><br><br><br>
+
+	<div class = "transition">
 	</div>
 
-	<div class="row item" id="confirmation">
-    	<div id="confirmationFirst">
-    		<h2>Dear <?php
-				$name = @trim($_POST["name"]);
-				print ("$name");?>:
-			</h2>
-			<h3> Thank You for Your Message. Our Team will Response within 24 Hours.
-				 Thanks again for visiting PartyJoy! </h3>
-				 <br>
+    <div class= "dashBoardWrapper">
+        <h2 class= "myAccountTitle"> Welcome back to your PartyJoy Account </h2>
+        <div id = "dashBoardContent">
+            <h3 class = "dashBoard"> DashBoard </h3>
+
+            <h4 class="PartyTag">Coming Party:</h4>
+            <ul id = "comingParty">
+              <li><a href = "page9Step1HL.php">New Party </a></li>
+            </ul>
+
+            <h4 class="PartyTag">Recommended Party Package:</h4>
+            <ul id = "recommendedParty">
+							  <li><a href = "classicpackage.php">Classic Package </a></li>
+								<li><a href = "popularpackage.php">Popular Package</a></li>
+								<li><a href = "luxurypackage.php">Luxury Package</a></li>
+            </ul>
+
+
+            <h4 class="PartyTag">Setting:</h4>
+            <ul id = "setting">
+							<li><strong>First name: </strong><span style="font-size:20px;color:red"><?=$user->fname?></span></li>
+							<li><strong>Last name: </strong><span style="font-size:20px;color:red"><?=$user->lname?></span></li>
+              <li><strong>Email:</strong><span style="font-size:20px;color:red"><?=$user->email?></span></li>
+            </ul>
         </div>
-    </div>
+      </div>
 
-    <div class="row item">
-		<br><br><br><br>
-	</div>
 
-    <!---footer-->
-	<div class="footer"> 
-			<div class="social">
-				<p>Connect with Us: </p>
-		    	<a href="http://www.facebook.com"><img src="Image/facebook.png" alt="facebookicon" /> </a>
-		    	<a href="http://www.linkedin.com"><img src="Image/linkedin.png" alt="linkedinicon" /> </a>
-		    	<a href="http://www.twitter.com"><img src="Image/twitter.png" alt="twittericon" /> </a>
-		    	<a href="http://www.instagram.com"><img src="Image/ins.png" alt="insicon" /> </a>
-		    </div>
-		    <div class="footnavbar">
-				<a class="foot" href="aboutUs.html">About Us</a>
-				<a class="foot" href="contactUS.html">Contact Us</a>
-				<a class="foot" href="career.html">Career</a>
-				<a class="foot" href="help.html">Help</a>
-			</div>
-	        <div class="copyright">© Made by PartyJoy All rights reserved. Photo source: Google Photo</div>       
-	</div> 
-<!---footer end-->   
-    
-</body>
-</html>
+			<!---footer-->
+			 <div class="footer">
+					 <div class="social">
+						 <p>Connect with Us: </p>
+							 <a href="http://www.facebook.com"><img src="Image/facebook.png" alt="facebookicon" /> </a>
+							 <a href="http://www.linkedin.com"><img src="Image/linkedin.png" alt="linkedinicon" /> </a>
+							 <a href="http://www.twitter.com"><img src="Image/twitter.png" alt="twittericon" /> </a>
+							 <a href="http://www.instagram.com"><img src="Image/ins.png" alt="insicon" /> </a>
+						 </div>
+						 <div class="footnavbar">
+						 <a class="foot" href="aboutUs.html">About Us</a>
+						 <a class="foot" href="contactUS.html">Contact Us</a>
+						 <a class="foot" href="career.html">Career</a>
+						 <a class="foot" href="help.html">Help</a>
+					 </div>
+							 <div class="copyright">© Made by PartyJoy All rights reserved. Photo source: Google Photo</div>
+			 </div>
+			<!---footer end-->
+			</body>
+		</html>

@@ -23,11 +23,11 @@
 		<div class="signInUp">
 			<ul class="signInUpList">
 				<li id="logIn"><a title="Login to PartyJoy" href="Page5SignInXiaoyu.html">Log In</a></li>
-				<li id="signUp"><a title="Signup to PartyJoy" href="Page4SignUpXiaoyu.html">Sign Up</a></li>	
+				<li id="signUp"><a title="Signup to PartyJoy" href="Page4SignUpXiaoyu.html">Sign Up</a></li>
 			</ul>
 		</div>
 	</div>
-	
+
 	<div class="navbar">
 		<div class="dropdown" id="home">
 		  <a class="nodropdown" href="Page1HomePage.html">Home</a>
@@ -99,7 +99,7 @@
 		</div>
 		<div class="dropdown" id="more">
 		  <a class="nodropdown" href="contactUS.html">More</a>
-		</div>	
+		</div>
 	</div>
 	<!---common head end-->
 <div class="review">
@@ -114,7 +114,7 @@
 		<p class="item">Your Occasion</p>
 		<p class="details">Wedding</p>
 		<br><br><br><br><br><br>
-		
+
 	</div>
 
 	<div class="singleStepContainer">
@@ -123,7 +123,7 @@
 		<p class="details">30 Geusts</p>
 		<p class="details">Outdoor</p>
 		<br><br><br><br><br><br>
-		
+
 	</div>
 
 	<div class="singleStepContainer">
@@ -132,7 +132,7 @@
 		<p class="details">Ewoodys</p>
 		<p class="price">$300</p>
 		<br><br><br><br><br><br>
-		
+
 	</div>
 
 	<div class="singleStepContainer">
@@ -141,7 +141,7 @@
 		<p class="details">Snake</p>
 		<p class="price">$50</p>
 		<br><br><br><br><br><br>
-		
+
 	</div>
 	<div class="singleStepContainer">
 		<img class="icon" src="Image/decorationIcon.png" alt="decoarationIcon">
@@ -149,7 +149,7 @@
 		<p class="details">Flower</p>
 		<p class="price">$500</p>
 		<br><br><br><br><br><br>
-		
+
 	</div>
 	<div class="singleStepContainer">
 		<img class="icon" src="Image/serviceIcon.png" alt="serviceIcon">
@@ -157,7 +157,7 @@
 		<p class="details">Photography</p>
 		<p class="price">$700</p>
 		<br><br><br><br><br><br>
-		
+
 	</div>
 
 	<div class="singleStepContainer">
@@ -166,16 +166,16 @@
 		<p class="details">Makeup</p>
 		<p class="price">$300</p>
 		<br><br><br><br><br><br>
-		
+
 	</div>
 </div>
 
 <div class="total">
-	
+
 	<p>SubTotal : $1,850.00</p>
-	
+
 	<p>Tax :      $161.88</p>
-	
+
 	<p>Total    : $2011.88</p>
 </div>
 
@@ -184,7 +184,7 @@
 </div>
 
 <!---footer-->
-	<div class="footer"> 
+	<div class="footer">
 			<div class="social">
 				<p>Connect with Us: </p>
 		    	<a href="http://www.facebook.com"><img src="Image/facebook.png" alt="facebookicon" /> </a>
@@ -198,8 +198,8 @@
 				<a class="foot" href="career.html">Career</a>
 				<a class="foot" href="help.html">Help</a>
 			</div>
-	        <div class="copyright">© Made by PartyJoy All rights reserved. Photo source: Google Photo</div>       
-	</div> 
+	        <div class="copyright">© Made by PartyJoy All rights reserved. Photo source: Google Photo</div>
+	</div>
 <!---footer end-->
 
 </body>

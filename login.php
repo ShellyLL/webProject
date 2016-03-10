@@ -6,19 +6,19 @@ $xml2 = simplexml_load_file("users.xml") or die ("Error: Cannot Open Sever Datab
 $flag = false;
 # print_r($xml2);
 
-foreach($xml2->user as $user) { 
+foreach($xml2->user as $user) {
 	#echo "testforeach";
     if($user->email == $email && $user->password == $password) {
     	$flag = true;
-    header("Location: Page6MyAccountXiaoyu.html");
-    # echo "Yes";
-    break;
-    } 
+      #header("Location: Page6MyAccountXiaoyu.html");
+      include("Page6MyAccountXiaoyu.php");
+      break;
+    }
 }
 
-if (flag == false) {
-	echo "Wrong email or password"; 
+if ($flag == false) {
+	echo "Wrong email or password";
 }
 
- 
+
 ?>
