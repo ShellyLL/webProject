@@ -9,7 +9,7 @@
 	<inout>Outdoor</inout>
 	<comment>sss</comment>
 
-	<venue>North-Par-Community-Center</venue>
+	<venue>North-Park-Community-Center</venue>
 	<catering>Cheesecake</catering>
 	<decoration>Colorful-Ballon</decoration>
 	<service>Photography</service>
@@ -52,9 +52,9 @@
 		<Ewoodys-Community-Center>
 			<price>300</price>
 		</Ewoodys-Community-Center>
-		<North-Par-Community-Center>
+		<North-Park-Community-Center>
 			<price>200</price>
-		</North-Par-Community-Center>
+		</North-Park-Community-Center>
 	</venues>
 
 	<caterings>
