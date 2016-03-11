@@ -32,14 +32,38 @@ function validateForm() {
         return false;
     }
 
+    var regex = new RegExp("^[0-9 ]+$");
+    if (!regex.test(x)) {
+    	alert("Only number and Space Allowed");
+        return false;
+    }
+
+
     if (y == null || y == "") {
         alert("Expiration Date must be filled out");
         return false;
     }
 
+/*
+    var regex2 = new RegExp("^[0-9/]+$");
+    if (!regex2.test(y)) {
+    	alert("Should In Format of mm/Year");
+        return false;
+    }
+  */  
+
+  if(!/([0-9][1-2])\/((19|20)[0-9]{2})/.test(y)){
+    alert("Should In Format of mm/Year");
+        return false;
+}
+
     if (z == null || z == "") {
         alert("Security Code must be filled out");
         return false;
+    }
+
+    if (isNaN(z)) {
+    	alert("Security Code must be Numbers");
     }
 }
 
@@ -165,10 +189,6 @@ function validateForm() {
 
   </form>
 </div>
-</div>
-
-<div class="row item" id="seeConfirm">
-	<p><a href="page18ConfirmationHL.php">After Payment Submission, You will see the Order Confirmation</a></p>
 </div>
 
 
