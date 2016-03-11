@@ -52,10 +52,6 @@ function validateForm() {
     }
   */  
 
-  if(!/([0-9][1-2])\/((19|20)[0-9]{2})/.test(y)){
-    alert("Should In Format of mm/Year");
-        return false;
-}
 
     if (z == null || z == "") {
         alert("Security Code must be filled out");
