@@ -22,7 +22,28 @@
 <!---favicon-->
 	<link rel="shortcut icon" href="Image/logoOnly.png" >
     <link rel="icon" href="Image/logoOnly.png">
+<script>
+function validateForm() {
+    var x = document.forms["hlForm"]["cardNumber"].value;
+    var y = document.forms["hlForm"]["cardDate"].value;
+    var z = document.forms["hlForm"]["securityCode"].value;
+    if (x == null || x == "") {
+        alert("Card Number must be filled out");
+        return false;
+    }
 
+    if (y == null || y == "") {
+        alert("Expiration Date must be filled out");
+        return false;
+    }
+
+    if (z == null || z == "") {
+        alert("Security Code must be filled out");
+        return false;
+    }
+}
+
+</script>
     
 </head>
 
@@ -119,7 +140,7 @@
    
 	<div id="containerPayment">
   		
-  	<form method="post" action="paymentValid.php" > 
+  	<form method="post" name="hlForm" action="paymentValid.php" onsubmit="return validateForm()"> 
 
 	    <p>
       <label>Card Number</label>
